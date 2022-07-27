@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>最終課題の説明</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            letter-spacing: .1em;
+            color: #333;
+            background-color: #fff;
+            padding: 0 30px;
+            max-width: 1090px;
+        }
+
+        h1, section {
+            margin-bottom: 30px;
+        }
+
+        .list > li {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h1>最終課題の説明</h1>
+    <p>
+        私が最終課題をコーディングした時のHtml、CSSの解説ページです。<br>
+        ファイル一式はkadai-bio-shampoo-mentorの中にあります。<br>
+        各ファイルを確認したり、<a href="index.html" target="_blank">index.html</a>をプレビューし、デベロッパーツールなどで調査してみて下さい。<br>
+        今後の参考になれば幸いです。
+    </p>
+    <p>
+        <span class="text-red">※</span> このコードは課題の為、外部に公開する事はご遠慮ください。
+    </p>
+</section>
+
+<section>
+    <h2>コーディング時のルール</h2>
+    <ul class="list">
+        <li>
+            <h3>Html、CSSはEmmetを使用</h3>
+            <ul>
+                <li>Html、CSSを効率良く書けるEmmetを使用してコーディングしました。</li>
+                <li><a href="https://docs.emmet.io/" target="_blank">Emmet公式サイト</a></li>
+                <li><a href="https://webdesign-trends.net/entry/13588" target="_blank">爆速コーディングを実現！Emmetの使い方とVSCodeのおすすめ設定まとめ</a></li>
+            </ul>
+        </li>
+        <li>
+            <h3>CSSはSassで記入</h3>
+            <ul>
+                <li><a href="https://sass-lang.com/" target="_blank">Sass公式サイト</a></li>
+                <li><a href="https://digitalidentity.co.jp/blog/creative/css-sass.html" target="_blank">CSSの代わりにSassを使って、コードのメンテナンス性を高めよう！</a></li>
+                <li>現場ではSassを使って効率良くコーディングする場合が多いので覚えておいた方がいいでしょう。</li>
+                <li>./assets/css/にある拡張子が.scssのファイルがSassのファイルです。</li>
+                <li>index.htmlでは./assets/css/style.cssのみ読み込んでいます。</li>
+                <li>
+                    vw、letter-spacing、line-heightなどの計算をSassの関数を作成して効率化をしています。<br>
+                    ./assets/css/_mixin.scssの中に関数、mixinの宣言があります。
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>CSS設計はBEMを採用</h3>
+            <ul>
+                <li><a href="https://en.bem.info/" target="_blank">BEM公式サイト</a></li>
+                <li><a href="https://zenn.dev/nagan/articles/dac6fa662f4dab" target="_blank">【CSS設計】ゼロからわかるBEM超入門</a>
+                </li>
+                <li>BEMを採用してclass名の付け方に規約を設け、あまり悩まずにclass名を付けるようにしました。</li>
+            </ul>
+        </li>
+        <li>
+            <h3>position:absoluteをなるべく使わない</h3>
+            <ul>
+                <li>今回は「<a href="https://gyazo.com/d81a5110ad481f2f7e5aa3ce5c82eaf5" target="_blank">だから</a>」の<span
+                        class="text-red">▼</span>図形のみpositionで移動させています。
+                </li>
+                <li>他は単純に要素を上から順番に配置したり、Flexbox、Gridを使っています。</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Gridの設計図</h2>
+    <p>
+        今回の「初回限定キャンペーン」、「プレミアムbioシャンプーの使い方」セクションをGridレイアウトを使ってコーディングしました。<br>
+        Flexboxではどうしても無理な配置もGridレイアウトだと直感的に配置ができます。<br>
+        慣れると使いやすいので以下を参考に勉強してみて下さい。<br>
+        ※「プレミアムbioシャンプーの使い方」セクションのみFlexboxで作成したものと2つコーディングされています。
+    </p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout" target="_blank">グリッドレイアウトの基本概念</a></li>
+        <li><a href="https://qiita.com/kura07/items/e633b35e33e43240d363" target="_blank">CSS Grid Layout を極める！（基礎編）</a></li>
+    </ul>
+    <p>
+        Gridレイアウトの土台は<a href="https://grid.layoutit.com/" target="_blank">Layoutit CSS Grid Generator</a>を使用して作成し、CSSにコピペして調整しています。
+    </p>
+
+    <ul>
+        <li>
+            <h3>「初回限定キャンペーン」セクション</h3>
+            <ul>
+                <li><a href="https://grid.layoutit.com/?id=IHsDPDI" target="_blank">PC版</a></li>
+                <li><a href="https://grid.layoutit.com/?id=6RHzBnZ" target="_blank">SP版</a></li>
+            </ul>
+        </li>
+        <li>
+            <h3>「プレミアムbioシャンプーの使い方」セクション</h3>
+            <ul>
+                <li><a href="https://grid.layoutit.com/?id=Z7cs48D" target="_blank">PC版</a></li>
+                <li><a href="https://grid.layoutit.com/?id=ox2LISb" target="_blank">SP版</a></li>
+            </ul>
+        </li>
+    </ul>
+</section>
+</body>
+</html>

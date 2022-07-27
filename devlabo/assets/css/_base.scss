@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", $font_en, $font_my, sans-serif;
+  color: $black;
+  background-color: $white;
+  overflow-x: hidden;
+  font-style: normal;
+  
+}
+
+
+//animate
+.animate__animated {
+  opacity: 0;
+}
+
+
+h1, h2, h3, p, figure,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: vw($sp-width, 660);
+  @include mq(pc) {
+	width: vw(1366, 1140);
+  }
+}
+
+
+.pc-only {
+  display: none;
+  @include mq(pc) {
+	display: block;
+  }
+}
+
+.sp-only {
+  display: block;
+  @include mq(pc) {
+	display: none;
+  }
+}
+
+.section__title {
+    font-size: vw($sp-width, 50);
+    font-family: "YuGothic", serif;
+  color: rgb(124, 111, 123);
+    font-weight: bold;
+    line-height: 1.533;
+    text-align: center;
+}
+
+.section__sub-title {
+  font-size: 26px;
+  font-family: $font-en;
+  color: rgb(203, 196, 202);
+  font-weight: bold;
+  line-height: 1.038;
+  text-align: center;
+}
+
+.gray {
+  color: #717171;
+}
+
+.bk {
+  color: $black;
+}
+
+.sbk {
+  color: $black_sub;
+}
+.en {
+  font-family: $font_en;
+}
+
+.my {
+  font-family: $font_my;
+}
+
+.yu {
+  font-family: "YuGothic", serif;
+}
+.ac-text {
+  color: rgb(255, 113, 101);
+}
+
+
+
+.another-text {
+  color: #5b80b2;
+}
+
+

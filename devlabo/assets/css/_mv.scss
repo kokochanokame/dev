@@ -1,0 +1,40 @@
+.mv {
+  padding-top: vw($sp-width, 240);
+  width: 100vw;
+  height: vw($sp-width, 894);
+  background-image: url(/assets/img/sp_mv.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  &__top-image {
+	margin-left: vw($sp-width, -35);
+  }
+  
+  
+  &__message {
+	width: vw($sp-width, 434);
+	height: vw($sp-width, 220);
+  }
+  
+  &__bottom-image {
+	margin-top: vw($sp-width, 40);
+	margin-left: auto;
+	width: vw($sp-width, 572);
+  }
+  
+  &__text {
+	  font-size:26px;
+	font-family: "YuGothic", serif;
+	  color: rgb(255, 255, 255);
+	  font-weight: bold;
+	  line-height: 1.615;
+	  text-align: left;
+  }
+  
+  &__title {
+	margin-top: vw($sp-width, 40);
+	width: vw($sp-width, 572);
+	height: vw($sp-width, 153);
+  }
+}

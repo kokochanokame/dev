@@ -1,0 +1,24 @@
+.student {
+  padding: vw($sp-width, 90) 0;
+  background-color: #ffecea;
+ &__wraper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+  &__card {
+	margin: vw($sp-width, 28) auto;
+	padding: vw($sp-width, 50) vw($sp-width, 40);
+	width: 100%;
+	max-width: 680px;
+	height: vw($sp-width, 650);
+	background-color: #fff;
+  }
+  
+  &__play {
+	width: 100%;
+	max-width: 592px;
+	height: vw($sp-width, 380);
+	margin: 0 auto;
+  }
+}
