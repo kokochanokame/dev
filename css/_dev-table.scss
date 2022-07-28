@@ -1,0 +1,149 @@
+
+.dev-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: vw($sp-width, 684);
+  table-layout: fixed;
+  
+  &__wrapper {
+	padding: vw($sp-width, 70) 0 vw($sp-width, 80);
+  }
+  
+  &__title {
+	width: vw($sp-width, 30);
+  }
+  
+  &__main {
+	border-radius: 20px 20px 0 0;
+	padding: vw($sp-width, 38) vw($sp-width, 10);
+	border: 2px solid #fff;
+	background-color: rgb(255, 222, 192);
+  }
+  
+  &__main-td {
+	padding: vw($sp-width, 74) 0 vw($sp-width, 24);
+	font-size: vw($sp-width, 24);
+	font-weight: bold;
+	line-height: 1.25;
+	text-align: center;
+	border: 2px solid #fff;
+	background: #ffecdb;
+	position: relative;
+	
+	&::before {
+	  content: "";
+	  position: absolute;
+	  top: vw($sp-width, 24);
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: vw($sp-width, 40);
+	  height: vw($sp-width, 40);
+	  background: url("/assets/img/dc@2x.png") center center no-repeat;
+	  background-size: contain;
+	}
+  }
+  
+  &__main-td.en {
+	font-size: vw($sp-width, 38);
+  }
+  
+  &__logo {
+	width: vw($sp-width, 160);
+	height: vw($sp-width, 50);
+  }
+  
+  &__tr {
+	border: 2px solid #fff;
+  }
+  
+  &__th {
+	white-space: nowrap;
+	vertical-align: middle;
+	width: vw($sp-width, 70) !important;
+	background: url(/assets/img/th_bg.png) center center no-repeat;
+	background-size: cover;
+	border: 2px solid #fff;
+	font-size: vw($sp-width, 24);
+	font-family: "YuGothic";
+	color: rgb(76, 64, 64);
+	font-weight: bold;
+	line-height: 1.25;
+	letter-spacing: -1.9px;
+	text-align: center;
+  }
+  
+  &__th-sub {
+	margin-top: 6vw;
+	padding: vw($sp-width, 20) 0;
+	border-radius: 18px 18px 0 0;
+	background: #dfdfdf;
+	background-size: cover;
+	border: 2px solid #fff;
+	white-space: nowrap;
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(124, 111, 123);
+	font-weight: bold;
+	line-height: 1.167;
+	letter-spacing: -3.6px;
+	text-align: center;
+	height: vw($sp-width, 100);
+  }
+  
+  &__sub-td {
+	padding: vw($sp-width, 74) 0 vw($sp-width, 24);
+	background-color: rgb(245, 245, 245);
+	border: 2px solid #fff;
+	font-size: vw($sp-width, 24);
+	font-weight: bold;
+	line-height: 1.25;
+	letter-spacing: -1.2px;
+	text-align: center;
+	position: relative;
+	
+	&::before {
+	  content: "";
+	  position: absolute;
+	  top: vw($sp-width, 24);
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: vw($sp-width, 40);
+	  height: vw($sp-width, 40);
+	  background-size: contain;
+	}
+  }
+  
+  &__sub-td.en {
+	font-size: vw($sp-width, 34);
+  }
+  
+  &__span {
+	font-size: vw($sp-width, 22);
+  }
+  
+}
+
+.t-center {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c::before {
+  background: url("/assets/img/c@2x.png") center center no-repeat;
+  background-size: contain;
+}
+
+.t::before {
+  background: url("/assets/img/tri@2x.png") center center no-repeat;
+  background-size: contain;
+}
+
+.cross::before {
+  background: url("/assets/img/cross@2x.png") center center no-repeat;
+  background-size: contain;
+}

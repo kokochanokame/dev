@@ -1,0 +1,55 @@
+.tutor {
+  padding-top: vw($sp-width, 60);
+  padding-bottom: vw($sp-width, 90);
+  background-color: #f5f5f5;
+  
+  &__title {
+    margin: vw($sp-width, 40) 0;
+      font-size: vw($sp-width, 36);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.278;
+      text-align: center;
+    letter-spacing: 1.2px;
+  }
+  
+  &__card {
+    width: vw($sp-width, 650);
+    padding: vw($sp-width, 40);
+      background-color: rgb(255, 255, 255);
+  }
+  
+  &__img {
+    width: vw($sp-width, 570);
+    height: vw($sp-width, 348);
+  }
+  
+  &__name {
+    margin-top: vw($sp-width, 45);
+    margin-bottom: $sp-width, 20;
+      font-size: vw($sp-width, 40);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 0.925;
+    text-align: left;
+  }
+  
+  &__en {
+    margin-bottom: vw($sp-width, 31);
+    font-family: $font-en;
+    font-size: vw($sp-width, 26);
+    text-align: left;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+  }
+  
+  &__desc {
+     font-size: vw($sp-width, 26);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      line-height: 1.385;
+text-align: left;
+  }
+}

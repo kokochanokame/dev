@@ -1,0 +1,109 @@
+.payment {
+  padding: vw($sp-width, 74) 0;
+  background: url("/assets/img/sp-payment@2x.png") center no-repeat;
+  background-size: cover;
+  
+  &__sub {
+      font-size: vw($sp-width, 36);
+    font-family: "YuGothic", serif;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.278;
+      text-align: center;
+    }
+  
+  &__desc {
+    margin-top: vw($sp-width, 30);
+      font-size:vw($sp-width, 26);
+    font-weight: normal;
+    font-family: "YuGothic", serif;
+      color: rgb(0, 0, 0);
+      line-height: 1.538;
+    text-align: left;
+  }
+  
+  &__desc-more {
+    margin-top: vw($sp-width, 77);
+    margin-bottom: vw($sp-width, 20);
+    text-align: center;
+    font-size: vw($sp-width, 26);
+    font-weight: normal;
+    font-family: "YuGothic", serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.538;
+  }
+  
+  &__title-sub {
+      font-size: vw($sp-width, 30);
+    font-family: "YuGothic", serif;
+      color: rgb(0, 0, 0);
+      line-height: 1.25;
+      text-align: center;
+  }
+  &__title {
+    white-space: nowrap;
+    padding: 0 vw($sp-width, 75);
+    font-size: vw($sp-width, 46);
+    font-family: "YuGothic", serif;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    line-height: 1.25;
+    text-align: center;
+    position: relative;
+    &::before {
+    position: absolute;
+      content: "";
+      width: vw($sp-width, 75);
+      height: vw($sp-width, 90);
+      bottom: 0;
+      left: 0;
+      background: url("/assets/img/l-line@2x.png") center no-repeat;
+      background-size: contain;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: vw($sp-width, 75);
+      height: 90px;
+      bottom: 0;
+      right: 0;
+      background: url("/assets/img/r-line@2x.png") center no-repeat;
+      background-size: contain;
+    }
+  }
+ 
+  
+  
+  &__attention {
+    font-size: vw($sp-width, 24);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    line-height: 1.25;
+  }
+  
+  &__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__video-title {
+    margin-top: vw($sp-width, 57);
+    margin-bottom: vw($sp-width, 30);
+    padding: 0 vw($sp-width, 58);
+    display: inline-block;
+      font-size: vw($sp-width, 32);
+    font-family: "YuGothic", serif;
+      color: rgb(122, 109, 121);
+      font-weight: bold;
+      line-height: 1.542;
+      text-align: center;
+      border-radius: 30px;
+      border: 2px solid rgb(206, 222, 230);
+  }
+  
+  &__video-play {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,215 @@
+.feature {
+  padding-top: vw($sp-width, 90);
+  padding-bottom: vw($sp-width, 80);
+ &__secup-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+  &__sub-title {
+    white-space: nowrap;
+    margin-left: vw($sp-width, 133);
+    width: 80%;
+    display: inline-block;
+      font-size: vw($sp-width, 38);
+    font-family: "YuGothic", serif;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.263;
+      text-align: left;
+    background: url("/assets/img/feature_title_line.png")bottom no-repeat;
+    background-size: contain;
+  }
+  
+  &__first-title {
+    margin-top: vw($sp-width, 64);
+    margin-bottom: vw($sp-width, 22);
+      font-size: vw($sp-width, 40);
+    font-family: "YuGothic", serif;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.278;
+      text-align: left;
+  }
+  
+  &__first-text {
+    margin-top: vw($sp-width, 43);
+    margin-bottom: vw($sp-width, 100);
+      font-size: vw($sp-width, 26);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      line-height: 1.385;
+  }
+  
+  &__sec-desc {
+    margin-top: vw($sp-width, 50);
+    margin-bottom: vw($sp-width, 10);
+      font-size: vw($sp-width, 28);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.582;
+    text-align: center;
+    letter-spacing: 5.2px;
+  }
+  
+  &__sec-title {
+
+    font-size: vw($sp-width, 40);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(transparent 60%, #fff669);
+  }
+  
+  &__sec-img1 {
+    margin-top: vw($sp-width, 70);
+    img {
+      object-fit: contain;
+    }
+  }
+  
+  &__sec-img2 {
+    margin-top: vw($sp-width, 50);
+    img {
+      object-fit: contain;
+    }
+  }
+  
+  &__sec-explanation {
+      font-size: vw($sp-width, 36);
+      font-family: "YuGothic";
+      color: rgb(255, 113, 102);
+      font-weight: bold;
+      line-height: 1.278;
+      text-align: left;
+  }
+  
+  &__sec-text {
+      font-size: vw($sp-width, 26);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      line-height: 1.385;
+  }
+  
+  &__third__title {
+    margin-top: vw($sp-width, 64);
+    margin-bottom: vw($sp-width, 28);
+      font-size:vw($sp-width, 36);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.278;
+      text-align: center;
+  }
+  
+  &__forth__card {
+    margin-bottom: vw($sp-width, 100);
+  }
+  
+  &__play {
+    margin-bottom: vw($sp-width, 90);
+    width: 100%;
+    height:auto;
+  }
+  
+  &__card-title {
+    margin-top: vw($sp-width, 50);
+    margin-bottom: vw($sp-width, 28);
+      font-size: vw($sp-width, 36);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 1.278;
+    letter-spacing: -1.2px;
+      text-align: left;
+  }
+  
+  &__card-desc {
+    margin-top: vw($sp-width, 26);
+    font-size: vw($sp-width, 26);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      line-height: 1.385;
+ 
+  }
+}
+
+.first {
+  margin-top: vw($sp-width, 60);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw($sp-width, 96);
+    height: vw($sp-width, 83);
+    background: url("/assets/img/01@2x.png") no-repeat center;
+    background-size: contain;
+    left: vw($sp-width, -133);
+    bottom: 0;
+  }
+  
+}
+
+
+.sec {
+  margin-top: vw($sp-width, 60);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw($sp-width, 122);
+    height: vw($sp-width, 83);
+    background: url("/assets/img/02@2x.png") no-repeat center;
+    background-size: contain;
+    left: vw($sp-width, -133);
+    bottom: 0;
+  }
+}
+
+.third {
+  margin-top: vw($sp-width, 60);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw($sp-width, 122);
+    height: vw($sp-width, 83);
+    background: url("/assets/img/03@2x.png") no-repeat center;
+    background-size: contain;
+    left: vw($sp-width, -133);
+    bottom: 0;
+  }
+}
+
+.forth {
+  margin-top: vw($sp-width, 60);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw($sp-width, 122);
+    height: vw($sp-width, 83);
+    background: url("/assets/img/04@2x.png") no-repeat center;
+    background-size: contain;
+    left: vw($sp-width, -133);
+    bottom: 0;
+  }
+}
+
+
+.fifth {
+  margin-top: vw($sp-width, 60);
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: vw($sp-width, 122);
+    height: vw($sp-width, 83);
+    background: url("/assets/img/05@2x.png") no-repeat center;
+    background-size: contain;
+    left: vw($sp-width, -133);
+    bottom: 0;
+  }
+}

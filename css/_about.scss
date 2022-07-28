@@ -1,0 +1,45 @@
+.about {
+  padding-bottom: vw($sp-width, 74);
+  background: url("/assets/img/sp-aboutbg2x.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__sub-title {
+	display: inline-block;
+ font-size: vw($sp-width, 23);
+	font-family: "YuGothic", serif;
+	  color: rgb(0, 0, 0);
+	  font-weight: bold;
+	  line-height: 1.41;
+	  text-align: center;
+	border-bottom: 1px solid  rgb(255, 113, 101);
+  }
+  
+  &__text {
+	margin-top: vw($sp-width, 48);
+	font-size:vw($sp-width, 26);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+	line-height: 1.41;
+	text-align: center;
+  }
+  &__your {
+	margin-top: vw($sp-width, 30);
+	font-size: vw($sp-width, 18);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: normal;
+	line-height: 1.41;
+	text-align: center;
+  }
+  
+  &__point {
+	white-space: nowrap;
+	margin-top: vw($sp-width, 22);
+	font-weight: bold;
+	font-size: vw($sp-width, 40);
+  }
+  
+}

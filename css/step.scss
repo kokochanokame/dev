@@ -1,0 +1,146 @@
+.step {
+  padding-top: vw($sp-width, 70);
+  padding-bottom: vw($sp-width, 90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__top {
+    display: inline-block;
+    padding: 0 38px;
+    font-size: vw($sp-width, 34);
+    color: rgb(124, 111, 123);
+    font-weight: bold;
+    line-height: 1.941;
+    text-align: center;
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("/assets/img/lstep@2x.png") center center no-repeat;
+      background-size: contain;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("/assets/img/rstep@2x.png") center center no-repeat;
+      background-size: contain;
+    }
+  }
+    
+    &__wrapper {
+      display: block;
+      margin-top: vw($sp-width, 90);
+      @include mq(pc) {
+     
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    }
+    
+    &__card {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: vw($sp-width, 40);
+      & + & {
+        margin-top: vw($sp-width, 80);
+      }
+      @include mq(pc) {
+  display: block;
+        width: vw($sp-width, 100);
+      }
+    }
+    
+    &__img {
+      position: relative;
+      width: vw($sp-width, 330);
+      height: vw($sp-width, 210);
+      flex-shrink: 0;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 84px;
+        height: 77px;
+        left: 17px;
+        top: -44px;
+      }
+      //&::after {
+      //  content: '';
+      //  position: absolute;
+      //  width: 28px;
+      //  height: 14px;
+      //  left: 50%;
+      //  transform: translateY(-50%);
+      //  bottom: -28px;
+      //  background: url(/assets/img/step_arrow.png) center center no-repeat;
+      //  background-size: contain;
+      //}
+    }
+  
+  &__desc-title {
+    font-family: "YuGothic";
+      font-size: vw($sp-width, 30);
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      line-height: 0.733;
+  }
+  
+  &__desc-text {
+     font-size: vw($sp-width, 26);
+      font-family: "YuGothic";
+      color: rgb(0, 0, 0);
+      line-height: 1.385;
+  }
+}
+
+.step1::before {
+  background: url("/assets/img/01@2x.png")center center no-repeat;
+  background-size: contain;
+}
+
+.step1::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 14px;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: -28px;
+  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background-size: contain;
+}
+
+.step2::before {
+  background: url("/assets/img/02@2x.png")center center no-repeat;
+  background-size: contain;
+}
+
+.step2::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 14px;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: -28px;
+  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background-size: contain;
+}
+.step3::before {
+  background: url("/assets/img/03@2x.png")center center no-repeat;
+  background-size: contain;
+}

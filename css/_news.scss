@@ -1,0 +1,62 @@
+.news {
+  padding-bottom: vw($sp-width, 88);
+  border-bottom: 1px solid #cbc4ca;
+  &__title {
+	font-size: vw($sp-width, 50);
+	font-family: $font_my;
+	color: rgb(203, 196, 202);
+	text-align: left;
+  }
+  
+  &__sub {
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(124, 111, 123);
+	font-weight: bold;
+	line-height: 2.885;
+	text-align: left;
+  }
+  
+  &__items {
+	margin-top: vw($sp-width, 48);
+  }
+  
+  &__day {
+	font-size: vw($sp-width, 28);
+	font-family: $font_my;
+	color: rgb(203, 196, 202);
+	line-height: 1.431;
+	text-align: left;
+  }
+  
+  
+  &__text {
+	font-size: vw($sp-width, 26);
+	font-family: $font_my;
+	line-height: 1.431;
+	text-align: left;
+	color: $black_sub;
+  }
+  
+  &__btn {
+	margin-top: vw($sp-width, 56);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  &__more {
+	display: inline-block;
+	font-size: vw($sp-width, 28);
+	font-family: "YuGothic";
+	color: rgb(124, 111, 123);
+	font-weight: bold;
+	line-height: vw($sp-width, 68);
+	text-align: center;
+	border: 1px solid #cbc4ca;
+	border-radius: 34px;
+	width: vw($sp-width, 318);
+	height: vw($sp-width, 68);
+  }
+  
+}

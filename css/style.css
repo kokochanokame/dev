@@ -1,0 +1,1430 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "Manrope", "myriad-pro", sans-serif;
+  color: #000;
+  background-color: #fffefe;
+  overflow-x: hidden;
+  font-style: normal; }
+
+.animate__animated {
+  opacity: 0; }
+
+h1, h2, h3, p, figure,
+ul {
+  margin: 0;
+  padding: 0; }
+
+figure {
+  margin: 0; }
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 0px; }
+
+.container {
+  margin: 0 auto;
+  width: 88vw; }
+  @media screen and (min-width: 768) {
+    .container {
+      width: 83.4553440703vw; } }
+
+.pc-only {
+  display: none; }
+  @media screen and (min-width: 768) {
+    .pc-only {
+      display: block; } }
+
+.sp-only {
+  display: block; }
+  @media screen and (min-width: 768) {
+    .sp-only {
+      display: none; } }
+
+.section__title {
+  font-size: 6.6666666667vw;
+  font-family: "YuGothic", serif;
+  color: #7c6f7b;
+  font-weight: bold;
+  line-height: 1.533;
+  text-align: center; }
+
+.section__sub-title {
+  font-size: 26px;
+  font-family: "Manrope";
+  color: #cbc4ca;
+  font-weight: bold;
+  line-height: 1.038;
+  text-align: center; }
+
+.gray {
+  color: #717171; }
+
+.bk {
+  color: #000; }
+
+.sbk {
+  color: #222; }
+
+.en {
+  font-family: "Manrope"; }
+
+.my {
+  font-family: "myriad-pro"; }
+
+.yu {
+  font-family: "YuGothic", serif; }
+
+.ac-text {
+  color: #ff7165; }
+
+.another-text {
+  color: #5b80b2; }
+
+.header {
+  width: 100%;
+  height: 10.6666666667vw; }
+  .header__inner {
+    width: 96vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .header__logo {
+    width: 26.4vw;
+    height: 8vw; }
+  .header__items {
+    display: flex;
+    align-items: center;
+    gap: 1.3333333333vw; }
+  .header__link--small {
+    white-space: nowrap;
+    padding: 1.8666666667vw 5.3333333333vw;
+    font-size: 3.2vw;
+    text-align: center;
+    font-family: "YuGothic", serif;
+    color: #fffefe;
+    font-weight: bold;
+    line-height: 0.728;
+    background: linear-gradient(180deg, #ff9635 1%, #fcdb00 99%);
+    border-radius: 28px; }
+  .header__link--large {
+    white-space: nowrap;
+    padding: 1.8666666667vw 2.9333333333vw;
+    font-size: 3.2vw;
+    text-align: center;
+    font-family: "YuGothic", serif;
+    color: #fffefe;
+    font-weight: bold;
+    line-height: 0.728;
+    border-radius: 28px;
+    background-image: linear-gradient(180deg, #ff7166 1%, #ff9635 99%); }
+
+.mv {
+  padding-top: 32vw;
+  width: 100vw;
+  height: 119.2vw;
+  background-image: url(/assets/img/sp_mv.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .mv__top-image {
+    margin-left: -4.6666666667vw; }
+  .mv__message {
+    width: 57.8666666667vw;
+    height: 29.3333333333vw; }
+  .mv__bottom-image {
+    margin-top: 5.3333333333vw;
+    margin-left: auto;
+    width: 76.2666666667vw; }
+  .mv__text {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.615;
+    text-align: left; }
+  .mv__title {
+    margin-top: 5.3333333333vw;
+    width: 76.2666666667vw;
+    height: 20.4vw; }
+
+.banner {
+  margin-top: -16.9333333333vw;
+  padding-top: 4.4vw;
+  padding-bottom: 4.1333333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(/assets/img/sp_campaign.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+  .banner__top {
+    padding: 5px 51px;
+    background: url(/assets/img/cv_top.png) no-repeat center;
+    background-size: contain;
+    font-size: 2.9333333333vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.182;
+    text-align: center; }
+  .banner__main-description {
+    margin-top: 2.6666666667vw;
+    font-size: 4.8vw;
+    font-family: "YuGothic", serif;
+    color: #fffffe;
+    font-weight: bold;
+    line-height: 0.719;
+    text-align: center; }
+  .banner__sub {
+    margin-top: 1.8666666667vw;
+    font-size: 2.6666666667vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    line-height: 2.1;
+    text-align: center; }
+  .banner__btn {
+    margin-top: 2.4vw;
+    padding: 2.2666666667vw 6.9333333333vw;
+    display: inline-block;
+    font-size: 3.2vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.083;
+    text-align: center;
+    border-radius: 28.45px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    background-image: linear-gradient(180deg, #ff7166 1%, #ff9635 99%);
+    box-shadow: 0px 4px 8.28px 0.72px rgba(23, 128, 186, 0.32); }
+
+.about {
+  padding-bottom: 9.8666666667vw;
+  background: url("/assets/img/sp-aboutbg2x.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .about__sub-title {
+    display: inline-block;
+    font-size: 3.0666666667vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    line-height: 1.41;
+    text-align: center;
+    border-bottom: 1px solid #ff7165; }
+  .about__text {
+    margin-top: 6.4vw;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: normal;
+    line-height: 1.41;
+    text-align: center; }
+  .about__your {
+    margin-top: 4vw;
+    font-size: 2.4vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: normal;
+    line-height: 1.41;
+    text-align: center; }
+  .about__point {
+    white-space: nowrap;
+    margin-top: 2.9333333333vw;
+    font-weight: bold;
+    font-size: 5.3333333333vw; }
+
+.image__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+.image__card1 {
+  padding: 6.6666666667vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff1f0; }
+  .image__card1__main {
+    padding: 7px 32px;
+    display: inline-block;
+    font-size: 2.9333333333vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.273;
+    text-align: center;
+    background-color: #ff7165;
+    border-radius: 30px; }
+.image__card__main-text {
+  margin-top: 3.4666666667vw;
+  font-size: 2.9333333333vw;
+  font-family: "YuGothic", serif;
+  color: black;
+  font-weight: bold;
+  line-height: 1.38;
+  text-align: center; }
+.image__card2 {
+  background-color: #e4ebf0;
+  padding: 6.6666666667vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+  .image__card2__another {
+    padding: 7px 32px;
+    font-size: 2.9333333333vw;
+    font-family: "YuGothic", serif;
+    display: inline-block;
+    color: #7c6f7b;
+    font-weight: bold;
+    line-height: 1.273;
+    text-align: center;
+    border-radius: 30px;
+    border: solid 1px #7c6f7b; }
+
+.payment {
+  padding: 9.8666666667vw 0;
+  background: url("/assets/img/sp-payment@2x.png") center no-repeat;
+  background-size: cover; }
+  .payment__sub {
+    font-size: 4.8vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: center; }
+  .payment__desc {
+    margin-top: 4vw;
+    font-size: 3.4666666667vw;
+    font-weight: normal;
+    font-family: "YuGothic", serif;
+    color: black;
+    line-height: 1.538;
+    text-align: left; }
+  .payment__desc-more {
+    margin-top: 10.2666666667vw;
+    margin-bottom: 2.6666666667vw;
+    text-align: center;
+    font-size: 3.4666666667vw;
+    font-weight: normal;
+    font-family: "YuGothic", serif;
+    color: black;
+    line-height: 1.538; }
+  .payment__title-sub {
+    font-size: 4vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    line-height: 1.25;
+    text-align: center; }
+  .payment__title {
+    white-space: nowrap;
+    padding: 0 10vw;
+    font-size: 6.1333333333vw;
+    font-family: "YuGothic", serif;
+    font-weight: normal;
+    color: black;
+    line-height: 1.25;
+    text-align: center;
+    position: relative; }
+    .payment__title::before {
+      position: absolute;
+      content: "";
+      width: 10vw;
+      height: 12vw;
+      bottom: 0;
+      left: 0;
+      background: url("/assets/img/l-line@2x.png") center no-repeat;
+      background-size: contain; }
+    .payment__title::after {
+      position: absolute;
+      content: "";
+      width: 10vw;
+      height: 90px;
+      bottom: 0;
+      right: 0;
+      background: url("/assets/img/r-line@2x.png") center no-repeat;
+      background-size: contain; }
+  .payment__attention {
+    font-size: 3.2vw;
+    text-align: center;
+    color: black;
+    line-height: 1.25; }
+  .payment__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .payment__video-title {
+    margin-top: 7.6vw;
+    margin-bottom: 4vw;
+    padding: 0 7.7333333333vw;
+    display: inline-block;
+    font-size: 4.2666666667vw;
+    font-family: "YuGothic", serif;
+    color: #7a6d79;
+    font-weight: bold;
+    line-height: 1.542;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #cedee6; }
+  .payment__video-play {
+    width: 100%;
+    height: auto; }
+
+.cva {
+  padding-top: 8vw;
+  padding-bottom: 6.9333333333vw;
+  width: 100%;
+  background: url(/assets/img/sp_sta.png) center no-repeat;
+  background-size: cover; }
+  .cva__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cva__pc-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .cva__ac {
+    white-space: nowrap;
+    letter-spacing: -1.2px;
+    position: relative;
+    padding: 0 5.3333333333vw;
+    font-size: 3.7333333333vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    line-height: 2.679;
+    text-align: center; }
+    .cva__ac::before {
+      position: absolute;
+      content: "";
+      width: 5.3333333333vw;
+      height: 5.3333333333vw;
+      bottom: 1.6vw;
+      left: 0;
+      background: url("/assets/img/line_left.png") center no-repeat;
+      background-size: contain; }
+    .cva__ac::after {
+      position: absolute;
+      content: "";
+      width: 5.3333333333vw;
+      height: 5.3333333333vw;
+      bottom: 1.6vw;
+      right: 0;
+      background: url("/assets/img/line_right.png") center no-repeat;
+      background-size: contain; }
+  .cva__title {
+    font-size: 6.1333333333vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    line-height: 1.087;
+    text-align: center; }
+  .cva__items {
+    margin-top: 3.2vw;
+    display: flex;
+    align-items: center;
+    gap: 1.3333333333vw; }
+  .cva__item {
+    margin-top: 1.6vw;
+    padding: 1.0666666667vw 3.2vw;
+    display: inline-block;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid white; }
+  .cva__text {
+    margin-top: 4vw;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    line-height: 1.385;
+    text-align: center; }
+  .cva__free-link {
+    box-sizing: content-box;
+    margin-top: 8.6666666667vw;
+    width: 84vw;
+    height: 10.6666666667vw;
+    position: relative;
+    border-radius: 50px;
+    border: solid 5px #ffd7c4;
+    background: #fff;
+    display: inline-block;
+    font-size: 4.5333333333vw;
+    font-family: "YuGothic", serif;
+    line-height: 10.6666666667vw;
+    text-align: center;
+    color: black;
+    font-weight: bold; }
+  .cva__free-arrow {
+    position: absolute;
+    right: 7.3333333333vw;
+    top: -40%;
+    width: 2.6666666667vw;
+    height: 2.6666666667vw; }
+  .cva__line-link {
+    margin-top: 9.8666666667vw;
+    width: 84vw;
+    height: 10.6666666667vw;
+    padding: 0 18.9333333333vw 0 20.2666666667vw;
+    display: inline-block;
+    position: relative;
+    background-color: #00b900;
+    border-radius: 50px; }
+    .cva__line-link::before {
+      content: '';
+      position: absolute;
+      width: 60.1333333333vw;
+      height: 6vw;
+      background-image: url(/assets/img/more@2x.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -6vw; }
+  .cva__line-icon {
+    position: absolute;
+    left: 8.6666666667vw;
+    width: 8.4vw;
+    height: 8.4vw;
+    top: 50%;
+    transform: translateY(-50%); }
+  .cva__line-arrow {
+    position: absolute;
+    right: 7.3333333333vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.6666666667vw;
+    height: 2.6666666667vw; }
+  .cva__line-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .cva__line-top {
+    padding: 0 8.2666666667vw;
+    position: relative;
+    font-size: 3.2vw;
+    font-family: "YuGothic";
+    color: #fdee9e;
+    font-weight: bold;
+    text-align: center; }
+    .cva__line-top::before {
+      content: "";
+      position: absolute;
+      width: 6.6666666667vw;
+      height: 1px;
+      background-color: #fdee9e;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+    .cva__line-top::after {
+      content: "";
+      position: absolute;
+      width: 6.6666666667vw;
+      height: 1px;
+      background-color: #fdee9e;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+  .cva__line-bottom {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    text-align: center; }
+
+.line-ac {
+  color: #fff; }
+
+.feature {
+  padding-top: 12vw;
+  padding-bottom: 10.6666666667vw; }
+  .feature__secup-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .feature__sub-title {
+    white-space: nowrap;
+    margin-left: 17.7333333333vw;
+    width: 80%;
+    display: inline-block;
+    font-size: 5.0666666667vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    line-height: 1.263;
+    text-align: left;
+    background: url("/assets/img/feature_title_line.png") bottom no-repeat;
+    background-size: contain; }
+  .feature__first-title {
+    margin-top: 8.5333333333vw;
+    margin-bottom: 2.9333333333vw;
+    font-size: 5.3333333333vw;
+    font-family: "YuGothic", serif;
+    color: black;
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: left; }
+  .feature__first-text {
+    margin-top: 5.7333333333vw;
+    margin-bottom: 13.3333333333vw;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.385; }
+  .feature__sec-desc {
+    margin-top: 6.6666666667vw;
+    margin-bottom: 1.3333333333vw;
+    font-size: 3.7333333333vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1.582;
+    text-align: center;
+    letter-spacing: 5.2px; }
+  .feature__sec-title {
+    font-size: 5.3333333333vw;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(transparent 60%, #fff669); }
+  .feature__sec-img1 {
+    margin-top: 9.3333333333vw; }
+    .feature__sec-img1 img {
+      object-fit: contain; }
+  .feature__sec-img2 {
+    margin-top: 6.6666666667vw; }
+    .feature__sec-img2 img {
+      object-fit: contain; }
+  .feature__sec-explanation {
+    font-size: 4.8vw;
+    font-family: "YuGothic";
+    color: #ff7166;
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: left; }
+  .feature__sec-text {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.385; }
+  .feature__third__title {
+    margin-top: 8.5333333333vw;
+    margin-bottom: 3.7333333333vw;
+    font-size: 4.8vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: center; }
+  .feature__forth__card {
+    margin-bottom: 13.3333333333vw; }
+  .feature__play {
+    margin-bottom: 12vw;
+    width: 100%;
+    height: auto; }
+  .feature__card-title {
+    margin-top: 6.6666666667vw;
+    margin-bottom: 3.7333333333vw;
+    font-size: 4.8vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1.278;
+    letter-spacing: -1.2px;
+    text-align: left; }
+  .feature__card-desc {
+    margin-top: 3.4666666667vw;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.385; }
+
+.first {
+  margin-top: 8vw;
+  position: relative; }
+  .first::before {
+    position: absolute;
+    content: "";
+    width: 12.8vw;
+    height: 11.0666666667vw;
+    background: url("/assets/img/01@2x.png") no-repeat center;
+    background-size: contain;
+    left: -17.7333333333vw;
+    bottom: 0; }
+
+.sec {
+  margin-top: 8vw;
+  position: relative; }
+  .sec::before {
+    position: absolute;
+    content: "";
+    width: 16.2666666667vw;
+    height: 11.0666666667vw;
+    background: url("/assets/img/02@2x.png") no-repeat center;
+    background-size: contain;
+    left: -17.7333333333vw;
+    bottom: 0; }
+
+.third {
+  margin-top: 8vw;
+  position: relative; }
+  .third::before {
+    position: absolute;
+    content: "";
+    width: 16.2666666667vw;
+    height: 11.0666666667vw;
+    background: url("/assets/img/03@2x.png") no-repeat center;
+    background-size: contain;
+    left: -17.7333333333vw;
+    bottom: 0; }
+
+.forth {
+  margin-top: 8vw;
+  position: relative; }
+  .forth::before {
+    position: absolute;
+    content: "";
+    width: 16.2666666667vw;
+    height: 11.0666666667vw;
+    background: url("/assets/img/04@2x.png") no-repeat center;
+    background-size: contain;
+    left: -17.7333333333vw;
+    bottom: 0; }
+
+.fifth {
+  margin-top: 8vw;
+  position: relative; }
+  .fifth::before {
+    position: absolute;
+    content: "";
+    width: 16.2666666667vw;
+    height: 11.0666666667vw;
+    background: url("/assets/img/05@2x.png") no-repeat center;
+    background-size: contain;
+    left: -17.7333333333vw;
+    bottom: 0; }
+
+.tutor {
+  padding-top: 8vw;
+  padding-bottom: 12vw;
+  background-color: #f5f5f5; }
+  .tutor__title {
+    margin: 5.3333333333vw 0;
+    font-size: 4.8vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1.278;
+    text-align: center;
+    letter-spacing: 1.2px; }
+  .tutor__card {
+    width: 86.6666666667vw;
+    padding: 5.3333333333vw;
+    background-color: white; }
+  .tutor__img {
+    width: 76vw;
+    height: 46.4vw; }
+  .tutor__name {
+    margin-top: 6vw;
+    margin-bottom: 750, 20;
+    font-size: 5.3333333333vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 0.925;
+    text-align: left; }
+  .tutor__en {
+    margin-bottom: 4.1333333333vw;
+    font-family: "Manrope";
+    font-size: 3.4666666667vw;
+    text-align: left;
+    letter-spacing: 1.2px;
+    line-height: 1.5; }
+  .tutor__desc {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.385;
+    text-align: left; }
+
+.student {
+  padding: 12vw 0;
+  background-color: #ffecea; }
+  .student__wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .student__card {
+    margin: 3.7333333333vw auto;
+    padding: 6.6666666667vw 5.3333333333vw;
+    width: 100%;
+    max-width: 680px;
+    height: 86.6666666667vw;
+    background-color: #fff; }
+  .student__play {
+    width: 100%;
+    max-width: 592px;
+    height: 50.6666666667vw;
+    margin: 0 auto; }
+
+.dev-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 91.2vw;
+  table-layout: fixed; }
+  .dev-table__wrapper {
+    padding: 9.3333333333vw 0 10.6666666667vw; }
+  .dev-table__title {
+    width: 4vw; }
+  .dev-table__main {
+    border-radius: 20px 20px 0 0;
+    padding: 5.0666666667vw 1.3333333333vw;
+    border: 2px solid #fff;
+    background-color: #ffdec0; }
+  .dev-table__main-td {
+    padding: 9.8666666667vw 0 3.2vw;
+    font-size: 3.2vw;
+    font-weight: bold;
+    line-height: 1.25;
+    text-align: center;
+    border: 2px solid #fff;
+    background: #ffecdb;
+    position: relative; }
+    .dev-table__main-td::before {
+      content: "";
+      position: absolute;
+      top: 3.2vw;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5.3333333333vw;
+      height: 5.3333333333vw;
+      background: url("/assets/img/dc@2x.png") center center no-repeat;
+      background-size: contain; }
+  .dev-table__main-td.en {
+    font-size: 5.0666666667vw; }
+  .dev-table__logo {
+    width: 21.3333333333vw;
+    height: 6.6666666667vw; }
+  .dev-table__tr {
+    border: 2px solid #fff; }
+  .dev-table__th {
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 9.3333333333vw !important;
+    background: url(/assets/img/th_bg.png) center center no-repeat;
+    background-size: cover;
+    border: 2px solid #fff;
+    font-size: 3.2vw;
+    font-family: "YuGothic";
+    color: #4c4040;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -1.9px;
+    text-align: center; }
+  .dev-table__th-sub {
+    margin-top: 6vw;
+    padding: 2.6666666667vw 0;
+    border-radius: 18px 18px 0 0;
+    background: #dfdfdf;
+    background-size: cover;
+    border: 2px solid #fff;
+    white-space: nowrap;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: #7c6f7b;
+    font-weight: bold;
+    line-height: 1.167;
+    letter-spacing: -3.6px;
+    text-align: center;
+    height: 13.3333333333vw; }
+  .dev-table__sub-td {
+    padding: 9.8666666667vw 0 3.2vw;
+    background-color: whitesmoke;
+    border: 2px solid #fff;
+    font-size: 3.2vw;
+    font-weight: bold;
+    line-height: 1.25;
+    letter-spacing: -1.2px;
+    text-align: center;
+    position: relative; }
+    .dev-table__sub-td::before {
+      content: "";
+      position: absolute;
+      top: 3.2vw;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5.3333333333vw;
+      height: 5.3333333333vw;
+      background-size: contain; }
+  .dev-table__sub-td.en {
+    font-size: 4.5333333333vw; }
+  .dev-table__span {
+    font-size: 2.9333333333vw; }
+
+.t-center {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+.c::before {
+  background: url("/assets/img/c@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.t::before {
+  background: url("/assets/img/tri@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.cross::before {
+  background: url("/assets/img/cross@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.plan {
+  padding: 8vw 0 10.6666666667vw;
+  background: #f5f5f5; }
+  .plan__wrapper {
+    margin-top: 6.2666666667vw;
+    width: 100%; }
+  .plan__card {
+    margin: 0 auto 4vw;
+    padding: 5.3333333333vw 4vw 6.6666666667vw;
+    background: #fff;
+    width: 100%;
+    max-width: 81.3333333333vw; }
+  .plan__card-title {
+    white-space: nowrap;
+    font-size: 4vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1.452;
+    letter-spacing: -1.2px;
+    text-align: center; }
+  .plan__course {
+    margin-top: 3.2vw;
+    margin-bottom: 4vw;
+    width: 100%;
+    max-width: 81.3333333333vw;
+    height: 8.1333333333vw;
+    font-size: 5.3333333333vw;
+    font-family: "YuGothic", serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 8.1333333333vw; }
+  .plan__course.short {
+    position: relative; }
+    .plan__course.short::before {
+      content: '';
+      position: absolute;
+      width: 15.6vw;
+      height: 7.3333333333vw;
+      left: 2vw;
+      top: -7px;
+      background: url("/assets/img/no1@2x.png") no-repeat center center;
+      background-size: contain; }
+  .plan__card-text {
+    font-size: 4vw;
+    font-family: "YuGothic", serif;
+    color: #222222;
+    font-weight: bold;
+    line-height: 1.335;
+    text-align: center; }
+  .plan__card-price {
+    font-size: 5.0666666667vw;
+    font-family: "YuGothic";
+    color: #222222;
+    font-weight: bold;
+    line-height: 1.429;
+    text-align: center; }
+  .plan__ac {
+    font-size: 10.8vw;
+    line-height: 0.6; }
+  .plan__ac2 {
+    font-size: 5.3333333333vw;
+    line-height: 1.3; }
+  .plan__card-price--small {
+    font-size: 3.7333333333vw;
+    font-family: "YuGothic";
+    color: #222222;
+    font-weight: bold;
+    line-height: 1.429;
+    text-align: center; }
+  .plan__items {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    gap: 9.3333333333vw; }
+  .plan__item {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: #222222;
+    font-weight: bold;
+    line-height: 2.094; }
+  .plan__item-data {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: #222222;
+    line-height: 2.094; }
+  .plan__content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.3333333333vw; }
+  .plan__content-title {
+    white-space: nowrap;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: #222222;
+    font-weight: bold;
+    line-height: 2.094;
+    letter-spacing: -1.2px;
+    text-align: center; }
+  .plan__content-item {
+    padding-left: 21px;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    line-height: 2.266;
+    text-align: left;
+    position: relative; }
+    .plan__content-item::before {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      left: 0;
+      top: 3vw; }
+  .plan__content-item.s-item::before {
+    background-color: #ff9635; }
+  .plan__content-item.e-item::before {
+    background-color: #ff9635; }
+  .plan__flow {
+    margin: 4.6666666667vw 0;
+    padding: 10px 0;
+    font-size: 4.5333333333vw;
+    font-family: "YuGothic";
+    color: #ff9635;
+    font-weight: bold;
+    line-height: 1.281;
+    text-align: center; }
+  .plan__flow.short-text {
+    border: 1px solid #ff9635; }
+  .plan__flow.expert-text {
+    border: 1px solid #ff7165; }
+  .plan__flow-th {
+    white-space: nowrap;
+    padding: 18px;
+    width: 15.2vw;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    font-weight: bold;
+    line-height: 1.28;
+    text-align: left; }
+  .plan__flow-td {
+    padding: 2.2666666667vw 0;
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    line-height: 1.385;
+    text-align: left;
+    color: #222; }
+
+.short {
+  background-color: #ff9635; }
+
+.short-text {
+  color: #ff9635; }
+
+.expert {
+  background-color: #ff7165; }
+
+.expert-text {
+  color: #ff7165; }
+
+.plan__flow-tr:nth-of-type(even) {
+  background-color: #efefef; }
+
+.step {
+  padding-top: 9.3333333333vw;
+  padding-bottom: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .step__top {
+    display: inline-block;
+    padding: 0 38px;
+    font-size: 4.5333333333vw;
+    color: #7c6f7b;
+    font-weight: bold;
+    line-height: 1.941;
+    text-align: center;
+    position: relative; }
+    .step__top::before {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("/assets/img/lstep@2x.png") center center no-repeat;
+      background-size: contain; }
+    .step__top::after {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url("/assets/img/rstep@2x.png") center center no-repeat;
+      background-size: contain; }
+  .step__wrapper {
+    display: block;
+    margin-top: 12vw; }
+    @media screen and (min-width: 768) {
+      .step__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
+  .step__card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5.3333333333vw; }
+    .step__card + .step__card {
+      margin-top: 10.6666666667vw; }
+    @media screen and (min-width: 768) {
+      .step__card {
+        display: block;
+        width: 13.3333333333vw; } }
+  .step__img {
+    position: relative;
+    width: 44vw;
+    height: 28vw;
+    flex-shrink: 0; }
+    .step__img::before {
+      content: '';
+      position: absolute;
+      width: 84px;
+      height: 77px;
+      left: 17px;
+      top: -44px; }
+  .step__desc-title {
+    font-family: "YuGothic";
+    font-size: 4vw;
+    color: black;
+    font-weight: bold;
+    line-height: 0.733; }
+  .step__desc-text {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.385; }
+
+.step1::before {
+  background: url("/assets/img/01@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.step1::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 14px;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: -28px;
+  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background-size: contain; }
+
+.step2::before {
+  background: url("/assets/img/02@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.step2::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 14px;
+  left: 50%;
+  transform: translateY(-50%);
+  bottom: -28px;
+  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background-size: contain; }
+
+.step3::before {
+  background: url("/assets/img/03@2x.png") center center no-repeat;
+  background-size: contain; }
+
+.faq {
+  padding: 11.6vw 0;
+  background: #f5f5f5; }
+  .faq__section {
+    margin-top: 4.5333333333vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%; }
+  .faq__item + .faq__item {
+    margin-top: 2.9333333333vw; }
+  .faq__title {
+    cursor: pointer;
+    padding: 2.6666666667vw 9.0666666667vw;
+    font-size: 2.6666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    background-color: #fff;
+    position: relative; }
+    .faq__title::before {
+      content: "";
+      position: absolute;
+      width: 4.2666666667vw;
+      height: 5.6vw;
+      left: 2.9333333333vw;
+      top: 1.0666666667vw;
+      background: url("/assets/img/Q@2x.png") center center no-repeat;
+      background-size: contain; }
+  .faq__anser {
+    display: none; }
+  .faq__desc {
+    padding: 2.6666666667vw 9.0666666667vw;
+    font-size: 2.4vw;
+    font-family: "YuGothic";
+    color: #222222;
+    line-height: 1.667;
+    text-align: left;
+    position: relative; }
+    .faq__desc::before {
+      content: "";
+      position: absolute;
+      width: 3.0666666667vw;
+      height: 4vw;
+      left: 2.9333333333vw;
+      top: 1.0666666667vw;
+      background: url("/assets/img/A.png") center center no-repeat;
+      background-size: contain; }
+  .faq__desc.open {
+    display: block; }
+
+.accordion-item .accordion-content {
+  display: none; }
+
+.contact {
+  padding: 8vw 0 10.9333333333vw; }
+  .contact__form {
+    margin-top: 6.2666666667vw; }
+  .contact__group {
+    margin-top: 5.6vw; }
+  .contact__label-group {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+  .contact__label {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    text-align: left; }
+  .contact__required {
+    padding: 0 1.8666666667vw;
+    font-size: 3.2vw;
+    font-family: "YuGothic";
+    color: #ff7165;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ff7165;
+    border-radius: 4px;
+    line-height: 1.2; }
+  .contact__input {
+    margin-top: 2vw;
+    width: 100%;
+    height: 10.6666666667vw;
+    border: 1px solid #e1e6ee;
+    border-radius: 6px;
+    background-color: #f1f3f5; }
+    .contact__input::placeholder {
+      padding-left: 3.7333333333vw;
+      font-size: 3.4666666667vw;
+      font-family: "YuGothic";
+      color: rgba(0, 0, 0, 0.502);
+      text-align: left; }
+  .contact__label-check {
+    margin-bottom: 4.5333333333vw; }
+  .contact__input-check {
+    margin-bottom: 2.6666666667vw;
+    display: block;
+    font-size: 3.7333333333vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.714;
+    text-align: left; }
+  .contact__check-box {
+    margin-right: 3.2vw;
+    border: 1px solid #717171;
+    width: 4.6666666667vw;
+    height: 4.6666666667vw; }
+  .contact__input-textarea {
+    margin-top: 3.2vw;
+    width: 100%;
+    height: 31.6vw;
+    border: 1px solid #e1e6ee;
+    background-color: #f1f3f5;
+    border-radius: 6px; }
+    .contact__input-textarea::placeholder {
+      padding: 3.7333333333vw;
+      font-size: 3.4666666667vw;
+      font-family: "YuGothic";
+      color: rgba(0, 0, 0, 0.502);
+      text-align: left; }
+  .contact__policy {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.154;
+    text-align: left; }
+  .contact__policy-link {
+    cursor: pointer;
+    font-size: 3.4666666667vw;
+    color: #33b0ff;
+    line-height: 1.154;
+    text-align: left; }
+  .contact__order {
+    margin-top: 9.3333333333vw;
+    font-size: 4.5333333333vw;
+    font-family: "YuGothic";
+    color: white;
+    font-weight: bold;
+    line-height: 12vw;
+    text-align: center;
+    border-radius: 45px;
+    background: linear-gradient(180deg, #ff7166 1%, #ff9635 99%);
+    width: 80vw;
+    height: 12vw; }
+
+.news {
+  padding-bottom: 11.7333333333vw;
+  border-bottom: 1px solid #cbc4ca; }
+  .news__title {
+    font-size: 6.6666666667vw;
+    font-family: "myriad-pro";
+    color: #cbc4ca;
+    text-align: left; }
+  .news__sub {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: #7c6f7b;
+    font-weight: bold;
+    line-height: 2.885;
+    text-align: left; }
+  .news__items {
+    margin-top: 6.4vw; }
+  .news__day {
+    font-size: 3.7333333333vw;
+    font-family: "myriad-pro";
+    color: #cbc4ca;
+    line-height: 1.431;
+    text-align: left; }
+  .news__text {
+    font-size: 3.4666666667vw;
+    font-family: "myriad-pro";
+    line-height: 1.431;
+    text-align: left;
+    color: #222; }
+  .news__btn {
+    margin-top: 7.4666666667vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .news__more {
+    display: inline-block;
+    font-size: 3.7333333333vw;
+    font-family: "YuGothic";
+    color: #7c6f7b;
+    font-weight: bold;
+    line-height: 9.0666666667vw;
+    text-align: center;
+    border: 1px solid #cbc4ca;
+    border-radius: 34px;
+    width: 42.4vw;
+    height: 9.0666666667vw; }
+
+.footer {
+  padding: 9.3333333333vw 0 7.3333333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer__logo {
+    width: 30.8vw;
+    height: 9.3333333333vw; }
+  .footer__list {
+    margin-top: 5.6vw;
+    margin-bottom: 7.4666666667vw; }
+  .footer__list-item {
+    font-size: 3.4666666667vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 1.538;
+    text-align: center; }
+  .footer__attention {
+    font-size: 3.2vw;
+    font-family: "YuGothic";
+    color: #222222;
+    line-height: 1.333;
+    text-align: left; }
+  .footer__sns {
+    margin-top: 9.3333333333vw;
+    margin-bottom: 4vw;
+    display: flex;
+    align-items: center;
+    gap: 5.3333333333vw; }
+  .footer__sns-img {
+    width: 6.6666666667vw;
+    height: 6.6666666667vw; }
+  .footer__copy {
+    font-size: 2.9333333333vw;
+    font-family: "YuGothic";
+    color: black;
+    line-height: 0.773;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

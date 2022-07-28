@@ -1,0 +1,63 @@
+.image {
+  &__cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  &__card1 {
+	padding: vw($sp-width, 50) 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	//height: vw($sp-width, 540);
+	background-color: rgb(255, 241, 240);
+	
+	&__main {
+	  padding: 7px 32px;
+	  display: inline-block;
+		font-size: vw($sp-width, 22);
+	  font-family: "YuGothic", serif;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		line-height: 1.273;
+		text-align: center;
+		background-color: rgb(255, 113, 101);
+	  border-radius: 30px;
+	}
+  }
+  
+  &__card__main-text {
+	margin-top: vw($sp-width, 26);
+	  font-size:  vw($sp-width, 22);
+	  font-family: "YuGothic", serif;
+	  color: rgb(0, 0, 0);
+	  font-weight: bold;
+	  line-height: 1.38;
+	  text-align: center;
+  }
+  
+  &__card2 {
+	  background-color: rgb(228, 235, 240);
+	padding: vw($sp-width, 50) 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	//height: vw($sp-width, 540);
+	
+	&__another {
+	  padding: 7px 32px;
+	  font-size: vw($sp-width, 22);
+	  font-family: "YuGothic", serif;
+	  display: inline-block;
+		color: rgb(124, 111, 123);
+		font-weight: bold;
+		line-height: 1.273;
+		text-align: center;
+	  border-radius: 30px;
+	  border: solid 1px rgb(124, 111, 123);
+	}
+  }
+}
