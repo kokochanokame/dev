@@ -1,109 +1,168 @@
 .payment {
+ 
   padding: vw($sp-width, 74) 0;
   background: url("/assets/img/sp-payment@2x.png") center no-repeat;
   background-size: cover;
+  @include mq(pc) {
+	padding: vw($pc-width, 68) 0 vw($pc-width, 120);
+	background: url("/assets/img/pc_avout_bg2.png") center no-repeat;
+	
+  }
+  
+  &__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
   
   &__sub {
-      font-size: vw($sp-width, 36);
-    font-family: "YuGothic", serif;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.278;
-      text-align: center;
-    }
+	font-size: vw($sp-width, 36);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.278;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($sp-width, 26);
+	  line-height: 1.385;
+	  text-align: center;
+	}
+  }
   
   &__desc {
-    margin-top: vw($sp-width, 30);
-      font-size:vw($sp-width, 26);
-    font-weight: normal;
-    font-family: "YuGothic", serif;
-      color: rgb(0, 0, 0);
-      line-height: 1.538;
-    text-align: left;
+	margin-top: vw($sp-width, 30);
+	font-size: vw($sp-width, 26);
+	font-weight: normal;
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	line-height: 1.538;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($sp-width, 18);
+	  line-height: 1.556;
+	}
   }
   
   &__desc-more {
-    margin-top: vw($sp-width, 77);
-    margin-bottom: vw($sp-width, 20);
-    text-align: center;
-    font-size: vw($sp-width, 26);
-    font-weight: normal;
-    font-family: "YuGothic", serif;
-    color: rgb(0, 0, 0);
-    line-height: 1.538;
+	margin-top: vw($sp-width, 77);
+	margin-bottom: vw($sp-width, 20);
+	text-align: center;
+	font-size: vw($sp-width, 26);
+	font-weight: normal;
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	line-height: 1.538;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 61);
+	  margin-bottom: vw($pc-width, 20);
+	  font-size: vw($pc-width, 26);
+	}
   }
   
   &__title-sub {
-      font-size: vw($sp-width, 30);
-    font-family: "YuGothic", serif;
-      color: rgb(0, 0, 0);
-      line-height: 1.25;
-      text-align: center;
+	font-size: vw($sp-width, 30);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	line-height: 1.25;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 30);
+	}
   }
+  
   &__title {
-    white-space: nowrap;
-    padding: 0 vw($sp-width, 75);
-    font-size: vw($sp-width, 46);
-    font-family: "YuGothic", serif;
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    line-height: 1.25;
-    text-align: center;
-    position: relative;
-    &::before {
-    position: absolute;
-      content: "";
-      width: vw($sp-width, 75);
-      height: vw($sp-width, 90);
-      bottom: 0;
-      left: 0;
-      background: url("/assets/img/l-line@2x.png") center no-repeat;
-      background-size: contain;
-    }
-    &::after {
-      position: absolute;
-      content: "";
-      width: vw($sp-width, 75);
-      height: 90px;
-      bottom: 0;
-      right: 0;
-      background: url("/assets/img/r-line@2x.png") center no-repeat;
-      background-size: contain;
-    }
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0 vw($sp-width, 75);
+	font-size: vw($sp-width, 46);
+	font-family: "YuGothic", serif;
+	font-weight: normal;
+	color: rgb(0, 0, 0);
+	line-height: 1.25;
+	text-align: center;
+	position: relative;
+	@include mq(pc) {
+	  
+	  font-size: vw($pc-width, 46);
+	  padding: 0 vw($pc-width, 65)
+	}
+	
+	&::before {
+	  position: absolute;
+	  content: "";
+	  width: vw($sp-width, 75);
+	  height: vw($sp-width, 90);
+	  bottom: 0;
+	  left: 0;
+	  background: url("/assets/img/l-line@2x.png") center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($pc-width, 75);
+		height: vw($pc-width, 90);
+	  }
+	}
+	
+	&::after {
+	  position: absolute;
+	  content: "";
+	  width: vw($sp-width, 75);
+	  height: vw($sp-width, 90);
+	  bottom: 0;
+	  right: 0;
+	  background: url("/assets/img/r-line@2x.png") center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($pc-width, 75);
+		height: vw($pc-width, 90);
+	  }
+	}
   }
- 
   
   
   &__attention {
-    font-size: vw($sp-width, 24);
-    text-align: center;
-    color: rgb(0, 0, 0);
-    line-height: 1.25;
+	font-size: vw($sp-width, 24);
+	text-align: center;
+	color: rgb(0, 0, 0);
+	line-height: 1.25;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 24);
+	}
   }
   
   &__video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
   }
   
   &__video-title {
-    margin-top: vw($sp-width, 57);
-    margin-bottom: vw($sp-width, 30);
-    padding: 0 vw($sp-width, 58);
-    display: inline-block;
-      font-size: vw($sp-width, 32);
-    font-family: "YuGothic", serif;
-      color: rgb(122, 109, 121);
-      font-weight: bold;
-      line-height: 1.542;
-      text-align: center;
-      border-radius: 30px;
-      border: 2px solid rgb(206, 222, 230);
+	margin-top: vw($sp-width, 57);
+	margin-bottom: vw($sp-width, 30);
+	padding: 0 vw($sp-width, 58);
+	display: inline-block;
+	font-size: vw($sp-width, 32);
+	font-family: "YuGothic", serif;
+	color: rgb(122, 109, 121);
+	font-weight: bold;
+	line-height: 1.542;
+	text-align: center;
+	border-radius: 30px;
+	border: 2px solid rgb(206, 222, 230);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 47);
+	  margin-bottom: vw($pc-width, 16);
+		font-size: vw($pc-width, 22);
+		line-height: 1.636;
+		text-align: center;
+	}
   }
   
   &__video-play {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
+	@include mq(pc) {
+	  width: vw($pc-width, 796);
+	  height: vw($pc-width, 452);
+	}
   }
 }

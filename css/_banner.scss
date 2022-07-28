@@ -10,53 +10,83 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  @include mq(pc) {
+	margin-top: vw($pc-width, -90);
+	padding-top: vw($pc-width, 20);
+	padding-bottom: vw($pc-width, 28);
+	background-image: url(/assets/img/pc_cp2x.jpg);
+	width: vw($pc-width, 760);
+	height: vw($pc-width, 224);
+  }
   
   &__top {
-	padding: 5px 51px;
+	padding: vw($sp-width, 5) vw($sp-width, 51);
 	background: url(/assets/img/cv_top.png) no-repeat center;
 	background-size: contain;
-	  font-size: vw($sp-width, 22);
+	font-size: vw($sp-width, 22);
 	font-family: "YuGothic", serif;
-	  color: rgb(255, 255, 255);
-	  font-weight: bold;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.182;
+	text-align: center;
+	@include mq(pc) {
+	  padding: vw($pc-width, 5) vw($pc-width, 45);
+	  font-size: vw($pc-width, 22);
+	  font-family: "YuGothic";
 	  line-height: 1.182;
-	  text-align: center;
+	}
   }
   
   &__main-description {
 	margin-top: vw($sp-width, 20);
-	  font-size: vw($sp-width, 36);
+	font-size: vw($sp-width, 36);
 	font-family: "YuGothic", serif;
-	  color: rgb(255, 255, 254);
-	  font-weight: bold;
-	  line-height: 0.719;
-	  text-align: center;
+	color: rgb(255, 255, 254);
+	font-weight: bold;
+	line-height: 0.719;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 8);
+	  font-size: vw($pc-width, 32);
+	  line-height: 0.813;
+	}
   }
   
   &__sub {
 	margin-top: vw($sp-width, 14);
-	  font-size: vw($sp-width, 20);
+	font-size: vw($sp-width, 20);
 	font-family: "YuGothic", serif;
-	  color: rgb(255, 255, 255);
-	  line-height: 2.1;
-	  text-align: center;
+	color: rgb(255, 255, 255);
+	line-height: 2.1;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 8);
+	  font-size: vw($pc-width, 16);
+	  line-height: 1.2;
+	}
   }
   
   &__btn {
 	margin-top: vw($sp-width, 18);
 	padding: vw($sp-width, 17) vw($sp-width, 52);
 	display: inline-block;
-	  font-size: vw($sp-width, 24);
+	font-size: vw($sp-width, 24);
 	font-family: "YuGothic", serif;
-	  color: rgb(255, 255, 255);
-	  font-weight: bold;
-	  line-height: 1.083;
-	  text-align: center;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
+	line-height: 1.083;
+	text-align: center;
 	border-radius: 28.45px;
-	  border-style: solid;
-	  border-width: 4px;
-	  border-color: rgb(255, 255, 255);
-	  background-image:linear-gradient( 180deg, rgb(255,113,102) 1%, rgb(255,150,53) 99%);
-	  box-shadow: 0px 4px 8.28px 0.72px rgba(23, 128, 186, 0.32);
+	border-style: solid;
+	border-width: 4px;
+	border-color: rgb(255, 255, 255);
+	background-image: linear-gradient(180deg, rgb(255, 113, 102) 1%, rgb(255, 150, 53) 99%);
+	box-shadow: 0px 4px 8.28px 0.72px rgba(23, 128, 186, 0.32);
+	
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 14);
+	  padding: vw($pc-width, 9) vw($pc-width, 37);
+	  font-size: vw($pc-width, 24);
+	}
   }
 }

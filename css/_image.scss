@@ -3,6 +3,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@include mq(pc) {
+	  flex-direction: row;
+	  gap: 0;
+	}
   }
   
   &__card1 {
@@ -11,53 +15,96 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	//height: vw($sp-width, 540);
 	background-color: rgb(255, 241, 240);
+	@include mq(pc) {
+	  padding: vw($pc-width, 69) vw($pc-width, 38) vw($pc-width, 50) 0;
+	  width: 50%;
+	}
 	
 	&__main {
-	  padding: 7px 32px;
+	  
+	  padding: vw($sp-width, 7) vw($sp-width, 32);
 	  display: inline-block;
-		font-size: vw($sp-width, 22);
+	  font-size: vw($sp-width, 22);
 	  font-family: "YuGothic", serif;
-		color: rgb(255, 255, 255);
-		font-weight: bold;
-		line-height: 1.273;
-		text-align: center;
-		background-color: rgb(255, 113, 101);
+	  color: rgb(255, 255, 255);
+	  font-weight: bold;
+	  line-height: 1.273;
+	  text-align: center;
+	  background-color: rgb(255, 113, 101);
 	  border-radius: 30px;
+	  @include mq(pc) {
+		margin-left: vw($pc-width, 38);
+		margin-bottom: 8px;
+		padding: vw($pc-width, 3) vw($pc-width, 22);
+		font-size: vw($pc-width, 22);
+	  }
+	}
+	
+	&__main-img {
+	  width: vw($sp-width, 455);
+	  height: vw($sp-width, 320);
+	  @include mq(pc) {
+		margin-left: auto;
+		width: vw($pc-width, 340);
+		height: vw($pc-width, 270);
+	  }
 	}
   }
   
   &__card__main-text {
 	margin-top: vw($sp-width, 26);
-	  font-size:  vw($sp-width, 22);
-	  font-family: "YuGothic", serif;
-	  color: rgb(0, 0, 0);
-	  font-weight: bold;
-	  line-height: 1.38;
-	  text-align: center;
+	font-size: vw($sp-width, 22);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.38;
+	text-align: center;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 26);
+	  font-size: vw($pc-width, 22);
+	}
   }
   
   &__card2 {
-	  background-color: rgb(228, 235, 240);
+	background-color: rgb(228, 235, 240);
 	padding: vw($sp-width, 50) 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	//height: vw($sp-width, 540);
+	@include mq(pc) {
+	  padding: vw($pc-width, 69) 0 vw($pc-width, 50) vw($pc-width, 38);
+	  width: 50%;
+	}
 	
 	&__another {
-	  padding: 7px 32px;
+	  padding: vw($sp-width, 7) vw($sp-width, 32);
 	  font-size: vw($sp-width, 22);
 	  font-family: "YuGothic", serif;
 	  display: inline-block;
-		color: rgb(124, 111, 123);
-		font-weight: bold;
-		line-height: 1.273;
-		text-align: center;
+	  color: rgb(124, 111, 123);
+	  font-weight: bold;
+	  line-height: 1.273;
+	  text-align: center;
 	  border-radius: 30px;
 	  border: solid 1px rgb(124, 111, 123);
+	  @include mq(pc) {
+		margin-right: vw($pc-width, 38);
+		margin-bottom: 8px;
+		padding: vw($pc-width, 3) vw($pc-width, 22);
+		font-size: vw($pc-width, 22);
+	  }
+	}
+	
+	&__another-img {
+	  width: vw($sp-width, 455);
+	  height: vw($sp-width, 320);
+	  @include mq(pc) {
+		margin-right: auto;
+		width: vw($pc-width, 340);
+		height: vw($pc-width, 270);
+	  }
 	}
   }
 }

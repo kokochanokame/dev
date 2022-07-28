@@ -6,21 +6,38 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include mq(pc) {
+	padding-top: vw($pc-width, 130);
+	height: vw($pc-width, 681);
+	background-image: url(/assets/img/mv@2x.jpg);
+  
+  }
   
   &__top-image {
 	margin-left: vw($sp-width, -35);
+	@include mq(pc) {
+	  margin-left: vw($pc-width, -35);
+	}
   }
   
   
   &__message {
 	width: vw($sp-width, 434);
 	height: vw($sp-width, 220);
+	@include mq(pc) {
+	  width: vw($pc-width, 516);
+	  height: 11vw;
+	}
   }
   
   &__bottom-image {
 	margin-top: vw($sp-width, 40);
 	margin-left: auto;
 	width: vw($sp-width, 572);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 36);
+	  width: vw($pc-width, 577);
+	}
   }
   
   &__text {
@@ -30,11 +47,20 @@
 	  font-weight: bold;
 	  line-height: 1.615;
 	  text-align: left;
+	@include mq(pc) {
+	  font-size:vw($pc-width, 24);
+		line-height: 1.75;
+	}
   }
   
   &__title {
 	margin-top: vw($sp-width, 40);
 	width: vw($sp-width, 572);
 	height: vw($sp-width, 153);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 50);
+	  width: vw($pc-width, 572);
+	  height: vw($pc-width, 153);
+	}
   }
 }

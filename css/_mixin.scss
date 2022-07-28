@@ -1,7 +1,7 @@
 //media
 $breakpoints: (
-		"pc": "screen and (min-width: 768)",
-		'sp': "screen and (max-width: 767)"
+		"pc": "screen and (min-width: 768px)",
+		"sp": "screen and (max-width: 767px)",
 );
 
 @mixin mq($breakpoint: sp) {
@@ -10,6 +10,8 @@ $breakpoints: (
   }
 }
 
+@include mq(sp) {
+}
 @include mq(sp) {
 }
 

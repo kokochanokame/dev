@@ -80,15 +80,23 @@ table {
     font-weight: bold;
     line-height: 1.533;
     text-align: center;
+  @include mq(pc) {
+    font-size:vw($pc-width, 36);
+    font-family: "YuGothic";
+    line-height: 1.666;
+  }
 }
 
 .section__sub-title {
-  font-size: 26px;
+  font-size: vw($sp-width, 26);
   font-family: $font-en;
   color: rgb(203, 196, 202);
   font-weight: bold;
   line-height: 1.038;
   text-align: center;
+  @include mq(pc) {
+  
+  }
 }
 
 .gray {
