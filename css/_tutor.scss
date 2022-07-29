@@ -2,54 +2,143 @@
   padding-top: vw($sp-width, 60);
   padding-bottom: vw($sp-width, 90);
   background-color: #f5f5f5;
+  @include mq(pc) {
+	padding: vw($pc-width, 70) 0;
+  }
   
   &__title {
-    margin: vw($sp-width, 40) 0;
-      font-size: vw($sp-width, 36);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.278;
-      text-align: center;
-    letter-spacing: 1.2px;
+	margin: vw($sp-width, 40) 0;
+	font-size: vw($sp-width, 36);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.278;
+	text-align: center;
+	letter-spacing: 1.2px;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	  line-height: 1.385;
+	}
   }
   
   &__card {
-    width: vw($sp-width, 650);
-    padding: vw($sp-width, 40);
-      background-color: rgb(255, 255, 255);
+	width: 95%;
+	//width: vw($sp-width, 650);
+	height: vw($sp-width, 770);
+	padding: vw($sp-width, 40);
+	background-color: rgb(255, 255, 255);
+	@include mq(pc) {
+	  height: vw($pc-width, 380);
+	  
+	  width: vw($pc-width, 947);
+	  padding: vw($pc-width, 37);
+	}
   }
   
   &__img {
-    width: vw($sp-width, 570);
-    height: vw($sp-width, 348);
+	//width: vw($sp-width, 570);
+	width: 100%;
+	height: vw($sp-width, 348);
+	@include mq(pc) {
+	  width: vw($pc-width, 487);
+	  height: vw($pc-width, 298);
+	}
   }
   
   &__name {
-    margin-top: vw($sp-width, 45);
-    margin-bottom: $sp-width, 20;
-      font-size: vw($sp-width, 40);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 0.925;
-    text-align: left;
+	//margin-top: vw($sp-width, 45);
+	margin-bottom: $sp-width, 20;
+	font-size: vw($sp-width, 40);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 0.925;
+	text-align: left;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 34);
+	  margin-bottom: $pc-width, 4;
+	  font-size: vw($pc-width, 32);
+	}
   }
   
   &__en {
-    margin-bottom: vw($sp-width, 31);
-    font-family: $font-en;
-    font-size: vw($sp-width, 26);
-    text-align: left;
-    letter-spacing: 1.2px;
-    line-height: 1.5;
+	margin-bottom: vw($sp-width, 28);
+	font-family: $font-en;
+	font-size: vw($sp-width, 26);
+	text-align: left;
+	letter-spacing: 1.2px;
+	line-height: 1.5;
+	@include mq(pc) {
+	  margin-bottom: $pc-width, 23;
+	  font-size: vw($pc-width, 16);
+	}
   }
   
   &__desc {
-     font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.385;
-text-align: left;
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	text-align: left;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, -38);
+	  font-size: vw($pc-width, 18);
+	}
   }
 }
+
+@include mq(pc) {
+  .tutor__card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+	gap: 0px 30px;
+	grid-auto-flow: row;
+	grid-template-areas:
+    "tutor__img tutor__name"
+    "tutor__img tutor__en"
+    "tutor__img tutor__desc";
+  }
+  
+  .tutor__img {
+	grid-area: tutor__img;
+  }
+  
+  .tutor__name {
+	grid-area: tutor__name;
+  }
+  
+  .tutor__en {
+	grid-area: tutor__en;
+  }
+  
+  .tutor__desc {
+	grid-area: tutor__desc;
+  }
+  
+}
+.slide-arrow {
+  bottom: 0;
+  cursor: pointer;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  width: vw($sp-width, 60);
+  @include mq(pc) {
+	width: vw($pc-width, 41);
+  }
+}
+.prev-arrow {
+  left: 6vw;
+  z-index: 10;
+  @include mq(pc){
+	left: 8vw;
+  }
+}
+.next-arrow {
+  right: 6vw;
+  @include mq(pc){
+	right: 8vw;
+  }
+}
+

@@ -8,8 +8,8 @@
   @include mq(pc) {
 	padding-top: vw($pc-width, 48);
 	padding-bottom: vw($pc-width, 38);
-	background: url(/assets/img/pc_cv_bk2x.jpg) center no-repeat;
-	
+	background: url(/assets/img/pc_cv_bk2x.jpg) right top no-repeat;
+	background-size: 113%;
   }
   
   &__inner {
@@ -86,9 +86,7 @@
 	line-height: 1.087;
 	text-align: center;
 	@include mq(pc) {
-	  width: vw($pc-width, 26);
-	  height: vw($pc-width, 33);
-	  bottom: vw($pc-width, 4);
+		font-size: vw($pc-width, 40);
 	}
   }
   
@@ -97,6 +95,9 @@
 	display: flex;
 	align-items: center;
 	gap: vw($sp-width, 10);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 10);
+	}
   }
   
   &__item {
@@ -110,6 +111,11 @@
 	text-align: center;
 	border-radius: 30px;
 	border: 2px solid rgb(255, 255, 255);
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding: vw($sp-width, 2) vw($sp-width, 27);
+		font-size: vw($pc-width, 18);
+	}
   }
   
   &__text {
@@ -119,19 +125,37 @@
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	text-align: center;
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding: vw($sp-width, 2) vw($sp-width, 27);
+	  font-size: vw($pc-width, 18);
+		line-height: 1.444;
+		text-align: center;
+	}
   }
   
   &__free {
 	
   }
   
+  &__contact {
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 40);
+	  display: flex;
+	  flex-wrap: nowrap;
+	  align-items: center;
+	  gap: vw($pc-width, 16);
+	  
+	}
+  }
+  
   &__free-link {
+	white-space: nowrap;
 	box-sizing: content-box;
 	margin-top: vw($sp-width, 65);
 	width: vw($sp-width, 630);
 	height: vw($sp-width, 80);
 	position: relative;
-	//padding:0 vw($sp-width, 107) 0 vw($sp-width, 65);
 	border-radius: 50px;
 	border: solid 5px rgb(255, 215, 196);
 	background: #fff;
@@ -142,6 +166,13 @@
 	text-align: center;
 	color: rgb(0, 0, 0);
 	font-weight: bold;
+	@include mq(pc) {
+	  margin-top:0;
+	  width: vw($pc-width, 480);
+	  height: vw($pc-width, 76);
+	  font-size: vw($pc-width, 26);
+	  line-height: vw($pc-width, 76);
+	}
   }
   
   &__free-arrow {
@@ -150,18 +181,31 @@
 	top: -40%;
 	width: vw($sp-width, 20);
 	height: vw($sp-width, 20);
+	@include mq(pc) {
+	  right: vw($pc-width, 40);
+	  top: -40%;
+	  width: vw($pc-width, 11);
+	  height: vw($pc-width, 17);
+	}
   }
   
   &__line-link {
 	margin-top: vw($sp-width, 74);
 	width: vw($sp-width, 630);
 	height: vw($sp-width, 80);
-	
 	padding: 0 vw($sp-width, 142) 0 vw($sp-width, 152);
 	display: inline-block;
 	position: relative;
 	background-color: #00b900;
 	border-radius: 50px;
+	@include mq(pc) {
+	  margin-top: 0;
+	  padding: 0 vw($pc-width, 108) 0 vw($pc-width, 30);
+	  width: vw($pc-width, 480);
+	  height: vw($pc-width, 76);
+	  font-size: vw($pc-width, 26);
+	  line-height: vw($pc-width, 76);
+	}
 	
 	&::before {
 	  content: '';
@@ -175,7 +219,11 @@
 	  left: 50%;
 	  transform: translateX(-50%);
 	  top: vw($sp-width, -45);
-	  
+	  @include mq(pc) {
+		width: vw($pc-width, 317);
+		height: vw($pc-width, 20);
+		top: vw($pc-width, -30);
+	  }
 	}
 	
   }
@@ -188,6 +236,12 @@
 	height: vw($sp-width, 63);
 	top: 50%;
 	transform: translateY(-50%);
+	@include mq(pc) {
+	  left: vw($pc-width, 34);
+	  width: vw($pc-width, 50);
+	  height: vw($pc-width, 50);
+	  top: 15%;
+	}
   }
   
   &__line-arrow {
@@ -197,6 +251,12 @@
 	transform: translateY(-50%);
 	width: vw($sp-width, 20);
 	height: vw($sp-width, 20);
+	@include mq(pc) {
+	  right: vw($pc-width, 40);
+	  width: vw($pc-width, 11);
+	  height: vw($pc-width, 17);
+	  top: -29%;
+	}
   }
   
   &__line-center {
@@ -208,9 +268,11 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	
   }
   
   &__line-top {
+	white-space: nowrap;
 	padding: 0 vw($sp-width, 62);
 	position: relative;
 	font-size: vw($sp-width, 24);
@@ -218,6 +280,11 @@
 	color: rgb(253, 238, 158);
 	font-weight: bold;
 	text-align: center;
+	@include mq(pc) {
+	  line-height: 0.6;
+	  padding: 0 vw($pc-width, 50);
+	  font-size: vw($pc-width, 18);
+	}
 	
 	&::before {
 	  content: "";
@@ -228,7 +295,9 @@
 	  left: 0;
 	  top: 50%;
 	  transform: translateY(-50%);
-	  
+	  @include mq(pc) {
+		width: vw($sp-width, 30);
+	  }
 	}
 	
 	&::after {
@@ -240,15 +309,23 @@
 	  right: 0;
 	  top: 50%;
 	  transform: translateY(-50%);
+	  @include mq(pc) {
+		width: vw($sp-width, 30);
+	  }
 	}
   }
   
   &__line-bottom {
+	white-space: nowrap;
 	font-size: vw($sp-width, 26);
 	font-family: "YuGothic", serif;
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	  line-height: 1.5;
+	}
   }
   
   

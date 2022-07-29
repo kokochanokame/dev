@@ -4,143 +4,193 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include mq(pc) {
+	padding-top: vw($pc-width, 81);
+	padding-bottom: vw($pc-width, 90);
+	
+  }
   
   &__top {
-    display: inline-block;
-    padding: 0 38px;
-    font-size: vw($sp-width, 34);
-    color: rgb(124, 111, 123);
-    font-weight: bold;
-    line-height: 1.941;
-    text-align: center;
-    position: relative;
-  
-    &::before {
-      content: '';
-      position: absolute;
-      width: 36px;
-      height: 36px;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: url("/assets/img/lstep@2x.png") center center no-repeat;
-      background-size: contain;
-    }
-  
-    &::after {
-      content: '';
-      position: absolute;
-      width: 36px;
-      height: 36px;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      background: url("/assets/img/rstep@2x.png") center center no-repeat;
-      background-size: contain;
-    }
+	display: inline-block;
+	padding: 0 vw($sp-width, 38);
+	font-size: vw($sp-width, 34);
+	color: rgb(124, 111, 123);
+	font-weight: bold;
+	line-height: 1.941;
+	text-align: center;
+	position: relative;
+	@include mq(pc) {
+	  padding: 0 vw($pc-width, 38);
+	  font-size: vw($pc-width, 30);
+	}
+	
+	&::before {
+	  content: '';
+	  position: absolute;
+	  width: vw($sp-width, 36);
+	  height: vw($sp-width, 36);
+	  left: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: url("/assets/img/lstep@2x.png") center center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($sp-width, 31);
+		height: vw($sp-width, 31);
+	  }
+	}
+	
+	&::after {
+	  content: '';
+	  position: absolute;
+	  width: vw($sp-width, 36);
+	  height: vw($sp-width, 36);
+	  right: 0;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: url("/assets/img/rstep@2x.png") center center no-repeat;
+	  background-size: contain;
+	  @include mq(pc) {
+		width: vw($sp-width, 31);
+		height: vw($sp-width, 31);
+	  }
+	}
   }
-    
-    &__wrapper {
-      display: block;
-      margin-top: vw($sp-width, 90);
-      @include mq(pc) {
-     
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    }
-    
-    &__card {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: vw($sp-width, 40);
-      & + & {
-        margin-top: vw($sp-width, 80);
-      }
-      @include mq(pc) {
-  display: block;
-        width: vw($sp-width, 100);
-      }
-    }
-    
-    &__img {
-      position: relative;
-      width: vw($sp-width, 330);
-      height: vw($sp-width, 210);
-      flex-shrink: 0;
-      &::before {
-        content: '';
-        position: absolute;
-        width: 84px;
-        height: 77px;
-        left: 17px;
-        top: -44px;
-      }
-      //&::after {
-      //  content: '';
-      //  position: absolute;
-      //  width: 28px;
-      //  height: 14px;
-      //  left: 50%;
-      //  transform: translateY(-50%);
-      //  bottom: -28px;
-      //  background: url(/assets/img/step_arrow.png) center center no-repeat;
-      //  background-size: contain;
-      //}
-    }
+  
+  &__wrapper {
+	display: block;
+	margin-top: vw($sp-width, 90);
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 90);
+	  display: flex;
+	  align-items: flex-start;
+	  justify-content: space-between;
+	}
+  }
+  
+  &__card {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: vw($sp-width, 40);
+	@include mq(pc) {
+	  gap: 0;
+	}
+	
+	& + & {
+	  margin-top: vw($sp-width, 80);
+	  @include mq(pc) {
+		margin: 0;
+	  }
+	}
+	
+	@include mq(pc) {
+	  display: block;
+	  width: 30%;
+	}
+  }
+  
+  &__img {
+	position: relative;
+	width: vw($sp-width, 330);
+	height: vw($sp-width, 210);
+	flex-shrink: 0;
+	@include mq(pc) {
+	  width: vw($pc-width, 310);
+	  height: vw($pc-width, 200);
+	}
+	
+	&::before {
+	  content: '';
+	  position: absolute;
+	  width: vw($sp-width, 84);
+	  height: vw($sp-width, 77);
+	  left: vw($sp-width, 17);
+	  top: vw($sp-width, -44);
+	  @include mq(pc) {
+		width: vw($pc-width, 84);
+		height: vw($pc-width, 77);
+		left: vw($pc-width, 17);
+		top: vw($pc-width, -44);
+	  }
+	}
+  }
   
   &__desc-title {
-    font-family: "YuGothic";
-      font-size: vw($sp-width, 30);
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 0.733;
+	font-family: "YuGothic";
+	font-size: vw($sp-width, 30);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 0.733;
+	@include mq(pc) {
+	  margin-top: vw($pc-width,31);
+	  margin-bottom: vw($pc-width, 18);
+	  font-size: vw($pc-width, 22);
+	}
   }
   
   &__desc-text {
-     font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.385;
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	}
   }
 }
 
 .step1::before {
-  background: url("/assets/img/01@2x.png")center center no-repeat;
+  background: url("/assets/img/01@2x.png") center center no-repeat;
   background-size: contain;
 }
 
 .step1::after {
   content: '';
   position: absolute;
-  width: 28px;
-  height: 14px;
-  left: 50%;
+  width: vw($sp-width, 28);
+  height: vw($sp-width, 14);
+  right: 50%;
   transform: translateY(-50%);
-  bottom: -28px;
+  bottom: vw($sp-width, -28);
   background: url(/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain;
+  @include mq(pc) {
+	right: vw($pc-width, -27);
+	top: 50%;
+	transform: translateY(-50%);
+	width: vw($pc-width, 14);
+	height: vw($pc-width, 28);
+	transform: rotate(-90deg);
+  }
 }
 
 .step2::before {
-  background: url("/assets/img/02@2x.png")center center no-repeat;
+  background: url("/assets/img/02@2x.png") center center no-repeat;
   background-size: contain;
 }
 
 .step2::after {
   content: '';
   position: absolute;
-  width: 28px;
-  height: 14px;
-  left: 50%;
+  width: vw($sp-width, 28);
+  height: vw($sp-width, 14);
+  right: 50%;
   transform: translateY(-50%);
-  bottom: -28px;
+  bottom: vw($sp-width, -28);
   background: url(/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain;
+  @include mq(pc) {
+	right: vw($pc-width, -27);
+	top: 50%;
+	transform: translateY(-50%);
+	width: vw($pc-width, 14);
+	height: vw($pc-width, 28);
+	transform: rotate(-90deg);
+  }
 }
+
 .step3::before {
-  background: url("/assets/img/03@2x.png")center center no-repeat;
+  background: url("/assets/img/03@2x.png") center center no-repeat;
   background-size: contain;
 }

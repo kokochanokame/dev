@@ -1,153 +1,269 @@
 .feature {
   padding-top: vw($sp-width, 90);
   padding-bottom: vw($sp-width, 80);
- &__secup-wrapper {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+  @include mq(pc) {
+	padding-top: vw($pc-width, 85);
+	padding-bottom: vw($pc-width, 90);
+  }
+  
+  &__secup-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
   &__sub-title {
-    white-space: nowrap;
-    margin-left: vw($sp-width, 133);
-    width: 80%;
-    display: inline-block;
-      font-size: vw($sp-width, 38);
-    font-family: "YuGothic", serif;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.263;
-      text-align: left;
-    background: url("/assets/img/feature_title_line.png")bottom no-repeat;
-    background-size: contain;
+	white-space: nowrap;
+	margin-left: vw($sp-width, 133);
+	width: 80%;
+	display: inline-block;
+	font-size: vw($sp-width, 38);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.263;
+	text-align: left;
+	background: url("/assets/img/feature_title_line.png") bottom no-repeat;
+	background-size: contain;
+	@include mq(pc) {
+	  margin-left: vw($pc-width, 113);
+	  width: 80%;
+	  font-size: vw($pc-width, 36);
+	}
   }
   
   &__first-title {
-    margin-top: vw($sp-width, 64);
-    margin-bottom: vw($sp-width, 22);
-      font-size: vw($sp-width, 40);
-    font-family: "YuGothic", serif;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.278;
-      text-align: left;
+	margin-top: vw($sp-width, 64);
+	margin-bottom: vw($sp-width, 22);
+	font-size: vw($sp-width, 40);
+	font-family: "YuGothic", serif;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.278;
+	text-align: left;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 90);
+	  margin-bottom: 0;
+	  font-size: vw($pc-width, 36);
+	}
   }
   
   &__first-text {
-    margin-top: vw($sp-width, 43);
-    margin-bottom: vw($sp-width, 100);
-      font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.385;
+	margin-top: vw($sp-width, 43);
+	margin-bottom: vw($sp-width, 100);
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 32);
+	  margin-bottom: 0;
+	  font-size: vw($pc-width, 18);
+	  line-height: 1.556;
+	}
   }
   
   &__sec-desc {
-    margin-top: vw($sp-width, 50);
-    margin-bottom: vw($sp-width, 10);
-      font-size: vw($sp-width, 28);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.582;
-    text-align: center;
-    letter-spacing: 5.2px;
+	margin-top: vw($sp-width, 50);
+	margin-bottom: vw($sp-width, 10);
+	font-size: vw($sp-width, 28);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.582;
+	text-align: center;
+	letter-spacing: 5.2px;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 32);
+	  margin-bottom: 0;
+	  font-size: vw($pc-width, 18);
+	  line-height: 1.556;
+	}
   }
   
   &__sec-title {
-
-    font-size: vw($sp-width, 40);
-    font-weight: bold;
-    line-height: 1.5;
-    text-align: center;
-    display: inline-block;
-    background: linear-gradient(transparent 60%, #fff669);
+	font-size: vw($sp-width, 40);
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	display: inline-block;
+	background: linear-gradient(transparent 60%, #fff669);
+	@include mq(pc) {
+	  font-size: vw($pc-width, 36);
+	}
+  }
+  
+  &__sec-wrapper {
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 44);
+	  display: flex;
+	  flex-wrap: nowrap;
+	  align-items: center;
+	  justify-content: space-between;
+	}
+  }
+  
+  &__sec-box {
+	@include mq(pc) {
+	  margin-top: 0;
+	  width: 48%;
+	}
   }
   
   &__sec-img1 {
-    margin-top: vw($sp-width, 70);
-    img {
-      object-fit: contain;
-    }
+	margin-top: vw($sp-width, 70);
+	@include mq(pc) {
+	  margin-top: 0;
+	  width: 100%;
+	}
+	
+	
+	img {
+	  object-fit: contain;
+	}
   }
   
   &__sec-img2 {
-    margin-top: vw($sp-width, 50);
-    img {
-      object-fit: contain;
-    }
+	margin-top: vw($sp-width, 50);
+	@include mq(pc) {
+	  margin-top: 0;
+	  width: 100%;
+	}
+	
+	img {
+	  object-fit: contain;
+	}
   }
   
   &__sec-explanation {
-      font-size: vw($sp-width, 36);
-      font-family: "YuGothic";
-      color: rgb(255, 113, 102);
-      font-weight: bold;
-      line-height: 1.278;
-      text-align: left;
+	font-size: vw($sp-width, 36);
+	font-family: "YuGothic";
+	color: rgb(255, 113, 102);
+	font-weight: bold;
+	line-height: 1.278;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	  font-weight: bold;
+	  line-height: 1.385;
+	}
   }
   
   &__sec-text {
-      font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.385;
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	  font-weight: bold;
+	  line-height: 1.556;
+	}
   }
   
   &__third__title {
-    margin-top: vw($sp-width, 64);
-    margin-bottom: vw($sp-width, 28);
-      font-size:vw($sp-width, 36);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.278;
-      text-align: center;
+	margin-top: vw($sp-width, 64);
+	margin-bottom: vw($sp-width, 28);
+	font-size: vw($sp-width, 36);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.278;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	  font-weight: bold;
+	  line-height: 1.154;
+	}
+	
   }
-  
-  &__forth__card {
-    margin-bottom: vw($sp-width, 100);
+
+  &__forth__wrapper {
+	@include mq(pc) {
+	  margin-top: vw($sp-width, 48);
+	  display: flex;
+	  align-items: flex-start;
+	  justify-content: space-between;
+	}
   }
-  
-  &__play {
-    margin-bottom: vw($sp-width, 90);
-    width: 100%;
-    height:auto;
+
+&__forth__card {
+  margin-bottom: vw($sp-width, 100);
+  @include mq(pc){
+	width: 48%;
+	margin-bottom: 0;
   }
-  
-  &__card-title {
-    margin-top: vw($sp-width, 50);
-    margin-bottom: vw($sp-width, 28);
-      font-size: vw($sp-width, 36);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      line-height: 1.278;
-    letter-spacing: -1.2px;
-      text-align: left;
+}
+
+&__play {
+  margin-bottom: vw($sp-width, 90);
+  width: 100%;
+  height: auto;
+  @include mq(pc){
+	margin-bottom: vw($pc-width, 56);
   }
-  
-  &__card-desc {
-    margin-top: vw($sp-width, 26);
-    font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.385;
- 
+}
+
+  &__fifth__wrapper {
+	margin-top: vw($pc-width, 70);
   }
+
+  &__fifth__card {
+	margin-top: vw($pc-width, 38);
+  }
+&__card-title {
+  margin-top: vw($sp-width, 50);
+  margin-bottom: vw($sp-width, 28);
+  font-size: vw($sp-width, 36);
+  font-family: "YuGothic";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.278;
+  letter-spacing: -1.2px;
+  text-align: left;
+  @include mq(pc){
+	margin-top: vw($pc-width, 35);
+	margin-bottom: vw($pc-width, 22);
+	font-size: vw($pc-width, 26);
+	  line-height: 1.154;
+  }
+}
+
+&__card-desc {
+  margin-top: vw($sp-width, 26);
+  font-size: vw($sp-width, 26);
+  font-family: "YuGothic";
+  color: rgb(0, 0, 0);
+  line-height: 1.385;
+  @include mq(pc){
+	margin-top: 0;
+	font-size: vw($pc-width, 18);
+	line-height: 1.556;
+  }
+}
 }
 
 .first {
   margin-top: vw($sp-width, 60);
   position: relative;
+  @include mq(pc) {
+	margin-top: vw($pc-width, 90);
+  }
+  
   &::before {
-    position: absolute;
-    content: "";
-    width: vw($sp-width, 96);
-    height: vw($sp-width, 83);
-    background: url("/assets/img/01@2x.png") no-repeat center;
-    background-size: contain;
-    left: vw($sp-width, -133);
-    bottom: 0;
+	position: absolute;
+	content: "";
+	width: vw($sp-width, 96);
+	height: vw($sp-width, 83);
+	background: url("/assets/img/01@2x.png") no-repeat center;
+	background-size: contain;
+	left: vw($sp-width, -133);
+	bottom: 0;
+	@include mq(pc) {
+	  left: vw($pc-width, -133);
+	  width: vw($pc-width, 105);
+	  height: vw($pc-width, 76);
+	}
   }
   
 }
@@ -156,45 +272,72 @@
 .sec {
   margin-top: vw($sp-width, 60);
   position: relative;
+  @include mq(pc) {
+	margin-top: vw($pc-width, 90);
+  }
+  
   &::before {
-    position: absolute;
-    content: "";
-    width: vw($sp-width, 122);
-    height: vw($sp-width, 83);
-    background: url("/assets/img/02@2x.png") no-repeat center;
-    background-size: contain;
-    left: vw($sp-width, -133);
-    bottom: 0;
+	position: absolute;
+	content: "";
+	width: vw($sp-width, 122);
+	height: vw($sp-width, 83);
+	background: url("/assets/img/02@2x.png") no-repeat center;
+	background-size: contain;
+	left: vw($sp-width, -133);
+	bottom: 0;
+	@include mq(pc) {
+	  left: vw($pc-width, -133);
+	  width: vw($pc-width, 105);
+	  height: vw($pc-width, 76);
+	}
   }
 }
 
 .third {
   margin-top: vw($sp-width, 60);
   position: relative;
+  @include mq(pc) {
+	margin-top: vw($pc-width, 90);
+  }
+  
   &::before {
-    position: absolute;
-    content: "";
-    width: vw($sp-width, 122);
-    height: vw($sp-width, 83);
-    background: url("/assets/img/03@2x.png") no-repeat center;
-    background-size: contain;
-    left: vw($sp-width, -133);
-    bottom: 0;
+	position: absolute;
+	content: "";
+	width: vw($sp-width, 122);
+	height: vw($sp-width, 83);
+	background: url("/assets/img/03@2x.png") no-repeat center;
+	background-size: contain;
+	left: vw($sp-width, -133);
+	bottom: 0;
+	@include mq(pc) {
+	  left: vw($pc-width, -133);
+	  width: vw($pc-width, 105);
+	  height: vw($pc-width, 76);
+	}
   }
 }
 
 .forth {
   margin-top: vw($sp-width, 60);
   position: relative;
+  @include mq(pc) {
+	margin-top: vw($pc-width, 90);
+  }
+  
   &::before {
-    position: absolute;
-    content: "";
-    width: vw($sp-width, 122);
-    height: vw($sp-width, 83);
-    background: url("/assets/img/04@2x.png") no-repeat center;
-    background-size: contain;
-    left: vw($sp-width, -133);
-    bottom: 0;
+	position: absolute;
+	content: "";
+	width: vw($sp-width, 122);
+	height: vw($sp-width, 83);
+	background: url("/assets/img/04@2x.png") no-repeat center;
+	background-size: contain;
+	left: vw($sp-width, -133);
+	bottom: 0;
+	@include mq(pc) {
+	  left: vw($pc-width, -133);
+	  width: vw($pc-width, 105);
+	  height: vw($pc-width, 76);
+	}
   }
 }
 
@@ -202,14 +345,114 @@
 .fifth {
   margin-top: vw($sp-width, 60);
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    width: vw($sp-width, 122);
-    height: vw($sp-width, 83);
-    background: url("/assets/img/05@2x.png") no-repeat center;
-    background-size: contain;
-    left: vw($sp-width, -133);
-    bottom: 0;
+  @include mq(pc) {
+	margin-top: vw($pc-width, 90);
   }
+  
+  &::before {
+	position: absolute;
+	content: "";
+	width: vw($sp-width, 122);
+	height: vw($sp-width, 83);
+	background: url("/assets/img/05@2x.png") no-repeat center;
+	background-size: contain;
+	left: vw($sp-width, -133);
+	bottom: 0;
+	@include mq(pc) {
+	  left: vw($pc-width, -133);
+	  width: vw($pc-width, 105);
+	  height: vw($pc-width, 76);
+	}
+  }
+}
+
+@include mq(pc) {
+  .feature__first-desc {
+	margin-top: vw($pc-width, 47);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0 vw($pc-width, 75);
+	grid-auto-flow: row;
+	grid-template-areas:
+    "feature__first-img feature__first-title"
+    "feature__first-img feature__first-text";
+  }
+  
+  .feature__first-img {
+	grid-area: feature__first-img;
+	width: vw($pc-width, 490);
+  }
+  
+  .feature__first-title {
+	grid-area: feature__first-title;
+  }
+  
+  .feature__first-text {
+	grid-area: feature__first-text;
+  }
+  
+  
+  .feature__forth__card {  display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto auto;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+    "feature__forth__img"
+    "feature__card-title"
+    "feature__card-desc";
+  }
+  
+  .feature__forth__img {
+	grid-area: feature__forth__img;
+	width: vw($pc-width, 490);
+	height: vw($pc-width, 300);
+  }
+  
+  .feature__card-title { grid-area: feature__card-title; }
+  
+  .feature__card-desc { grid-area: feature__card-desc; }
+  
+  .feature__fifth__card {  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.5fr 0.5fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+    "feature__fifth-img feature__fifth-title"
+    "feature__fifth-img feature__fifth-desc";
+  }
+  
+  .feature__fifth-img {
+	grid-area: feature__fifth-img;
+	width: vw($pc-width, 484);
+	height: vw($pc-width, 298);
+  }
+  
+  .feature__fifth-title { grid-area: feature__fifth-title; }
+  
+  .feature__fifth-desc { grid-area: feature__fifth-desc; }
+  
+  .feature__fifth-reverse {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+	gap: 21px 37px;
+	grid-auto-flow: row;
+	grid-template-areas:
+    "feature__fifth-reverse-title feature__fifth-reverse-img"
+    "feature__fifth-reverse-desc feature__fifth-reverse-img";
+  }
+  
+  .feature__fifth-reverse-img {
+	grid-area: feature__fifth-reverse-img;
+	width: vw($pc-width, 484);
+	height: vw($pc-width, 298);
+  }
+  
+  .feature__fifth-reverse-desc { grid-area: feature__fifth-reverse-desc; }
+  
+  .feature__fifth-reverse-title { grid-area: feature__fifth-reverse-title; }
+  
 }

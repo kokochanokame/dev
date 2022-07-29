@@ -95,7 +95,7 @@ table {
   line-height: 1.038;
   text-align: center;
   @include mq(pc) {
-  
+    font-size: vw($pc-width, 26);
   }
 }
 

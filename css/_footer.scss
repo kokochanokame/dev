@@ -2,51 +2,85 @@
   padding: vw($sp-width, 70) 0 vw($sp-width, 55);
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
+  @include mq(pc) {
+    padding: vw($sp-width, 47) 0 vw($sp-width, 40);
+  
+  }
+  
   &__logo {
-    width: vw($sp-width, 231);
-    height: vw($sp-width, 70);
+	width: vw($sp-width, 231);
+	height: vw($sp-width, 70);
+    @include mq(pc) {
+      width: vw($pc-width, 231);
+      height: vw($pc-width, 70);
+    }
   }
   
-  &__list{
-    margin-top: vw($sp-width, 42);
-    margin-bottom: vw($sp-width, 56);
+  &__list {
+	margin-top: vw($sp-width, 42);
+	margin-bottom: vw($sp-width, 56);
+    @include mq(pc) {
+      margin-top: vw($pc-width, 25);
+      margin-bottom: vw($pc-width, 70);
+      display: flex;
+      align-items: center;
+      gap: vw($pc-width, 20);
+    }
   }
   
-  &__list-item{
-    font-size: vw($sp-width, 26);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 1.538;
-      text-align: center;
+  &__list-item {
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.538;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 16);
+	}
   }
   
   &__attention {
-    font-size: vw($sp-width, 24);
-      font-family: "YuGothic";
-      color: rgb(34, 34, 34);
-      line-height: 1.333;
-      text-align: left;
+	font-size: vw($sp-width, 24);
+	font-family: "YuGothic";
+	color: rgb(34, 34, 34);
+	line-height: 1.333;
+	text-align: left;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 16);
+	}
   }
   
   &__sns {
-    margin-top: vw($sp-width, 70);
-    margin-bottom: vw($sp-width, 30);
-    display: flex;
-    align-items: center;
-    gap: vw($sp-width, 40);
+	margin-top: vw($sp-width, 70);
+	margin-bottom: vw($sp-width, 30);
+	display: flex;
+	align-items: center;
+	gap: vw($sp-width, 40);
+	@include mq(pc) {
+	  margin-top: vw($sp-width, 51);
+	  margin-bottom: vw($sp-width, 15);
+	  gap: vw($pc-width, 20);
+	}
   }
   
   &__sns-img {
-    width: vw($sp-width, 50);
-    height: vw($sp-width, 50);
+	width: vw($sp-width, 50);
+	height: vw($sp-width, 50);
+	@include mq(pc) {
+	  width: vw($pc-width, 35);
+	  height: vw($pc-width, 35);
+	}
   }
   
   &__copy {
-      font-size: vw($sp-width, 22);
-      font-family: "YuGothic";
-      color: rgb(0, 0, 0);
-      line-height: 0.773;
-      text-align: center;
+	font-size: vw($sp-width, 22);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 0.773;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 14);
+	}
   }
 }

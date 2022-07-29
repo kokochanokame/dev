@@ -1,19 +1,29 @@
 .faq {
   padding: vw($sp-width, 87) 0;
   background: #f5f5f5;
+  @include mq(pc) {
+    padding: vw($pc-width, 87) 0;
+  }
+  
   &__section {
     margin-top: vw($sp-width, 34);
     margin-left: auto;
     margin-right: auto;
     position: relative;
     width: 100%;
-    
+    @include mq(pc) {
+      margin-top: vw($pc-width, 44);
+      width: vw($pc-width, 907);
+    }
   }
   
   &__wrapper {}
 &__item {
   & + & {
     margin-top: vw($sp-width, 22);
+    @include mq(pc) {
+      margin-top: vw($pc-width, 22);
+    }
   }
 }
 
@@ -27,6 +37,12 @@
     text-align: left;
   background-color: #fff;
   position: relative;
+  @include mq(pc) {
+    padding: vw($pc-width, 20) vw($pc-width, 68);
+    font-size: vw($pc-width, 20);
+    letter-spacing: -0.9px;
+  
+  }
   &::before {
     content: "";
     position: absolute;
@@ -36,6 +52,28 @@
     top: vw($sp-width, 8);
     background: url("/assets/img/Q@2x.png") center center no-repeat;
     background-size: contain;
+    @include mq(pc) {
+      width: vw($pc-width, 27);
+      height: vw($pc-width, 27);
+      left: vw($pc-width, 22);
+      top: vw($pc-width, 21);
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: vw($sp-width, 17);
+    height: vw($sp-width, 17);
+    right: vw($sp-width, 27);
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("/assets/img/accordion@2x.png") center center no-repeat;
+    background-size: contain;
+    @include mq(pc) {
+      width: vw($pc-width, 17);
+      height: vw($pc-width, 17);
+      right: vw($pc-width, 22);
+    }
   }
 }
   &__anser {
@@ -51,6 +89,10 @@
       line-height: 1.667;
       text-align: left;
     position: relative;
+    @include mq(pc) {
+      padding: vw($pc-width, 20) vw($pc-width, 68);
+      font-size: vw($pc-width, 18);
+    }
 
     &::before {
       content: "";
@@ -61,6 +103,12 @@
       top: vw($sp-width, 8);
       background: url("/assets/img/A.png") center center no-repeat;
       background-size: contain;
+      @include mq(pc) {
+        width: vw($pc-width, 27);
+        height: vw($pc-width, 27);
+        left: vw($pc-width, 22);
+        top: vw($pc-width, 21);
+      }
     }
   }
   &__desc.open {

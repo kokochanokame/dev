@@ -1,11 +1,22 @@
 .student {
   padding: vw($sp-width, 90) 0;
   background-color: #ffecea;
- &__wraper {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+  @include mq(pc) {
+	padding: vw($pc-width, 64) 0 vw($pc-width, 70);
+  }
+  
+  &__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 66);
+	  flex-wrap: nowrap;
+	  flex-direction: row;
+	  justify-content: space-between;
+	}
+  }
+  
   &__card {
 	margin: vw($sp-width, 28) auto;
 	padding: vw($sp-width, 50) vw($sp-width, 40);
@@ -13,6 +24,12 @@
 	max-width: 680px;
 	height: vw($sp-width, 650);
 	background-color: #fff;
+	@include mq(pc) {
+	  margin: 0;
+	  padding: vw($pc-width, 22) vw($pc-width, 19);
+	  width: vw($pc-width, 310);
+	  height: vw($pc-width, 343);
+	}
   }
   
   &__play {
@@ -20,5 +37,49 @@
 	max-width: 592px;
 	height: vw($sp-width, 380);
 	margin: 0 auto;
+	@include mq(pc) {
+	  width: vw($pc-width, 270);
+	  height: vw($pc-width, 177);
+	}
   }
+  
+  &__name {
+	margin-top: vw($sp-width, 31);
+	font-size: vw($sp-width, 30);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	line-height: 1.609;
+	@include mq(pc) {
+	  margin-top: vw($pc-width, 24);
+	  font-size: vw($pc-width, 18);
+	  line-height: 1.222;
+	}
+  }
+  
+  &__info-title {
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	font-weight: normal;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 18);
+	  line-height: 1.222;
+	}
+  }
+  
+  
+  &__info-ans {
+	font-size: vw($sp-width, 26);
+	font-family: "YuGothic";
+	color: rgb(0, 0, 0);
+	line-height: 1.385;
+	font-weight: normal;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 16);
+	  line-height: 1.625;
+	}
+  }
+  
 }

@@ -45,6 +45,18 @@ $(function () {
   });
 });
 
+$(function () {
+  $(".slider").slick({
+    autoplay: false,
+    centerMode: true,
+    centerPadding: "10%",
+    prevArrow: '<img src="/assets/img/slide_arrow-l.png" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="/assets/img/slide_arrow-r.png" class="slide-arrow next-arrow">',
+    
+  });
+});
+
+
 
 
 
