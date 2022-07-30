@@ -65,7 +65,6 @@ table {
   @media screen and (min-width: 768px) {
     .section__title {
       font-size: 3vw;
-      font-family: "YuGothic";
       line-height: 1.666; } }
 
 .section__sub-title {
@@ -591,6 +590,7 @@ table {
         line-height: 1.636;
         text-align: center; } }
   .payment__video-play {
+    cursor: pointer;
     width: 100%;
     height: auto; }
     @media screen and (min-width: 768px) {
@@ -1025,6 +1025,7 @@ table {
         width: 48%;
         margin-bottom: 0; } }
   .feature__play {
+    cursor: pointer;
     margin-bottom: 12vw;
     width: 100%;
     height: auto; }
@@ -2161,6 +2162,8 @@ table {
         font-size: 1.25vw;
         padding: 0 1.3333333333vw; } }
   .contact__input {
+    cursor: pointer;
+    padding-left: 3.7333333333vw;
     margin-top: 2vw;
     width: 100%;
     height: 10.6666666667vw;
@@ -2170,16 +2173,15 @@ table {
     @media screen and (min-width: 768px) {
       .contact__input {
         margin-top: 0;
+        padding-left: 1.5vw;
         width: 43.5vw;
         height: 3.6666666667vw; } }
     .contact__input::placeholder {
-      padding-left: 3.7333333333vw;
       font-size: 3.4666666667vw;
       color: rgba(0, 0, 0, 0.502);
       text-align: left; }
       @media screen and (min-width: 768px) {
         .contact__input::placeholder {
-          padding-left: 1.5vw;
           font-size: 1.3333333333vw; } }
   .contact__label-check {
     margin-bottom: 4.5333333333vw; }
@@ -2203,6 +2205,7 @@ table {
       align-items: flex-start;
       gap: 13.1666666667vw; } }
   .contact__check-box {
+    cursor: pointer;
     margin-right: 3.2vw;
     border: 1px solid #717171;
     width: 4.6666666667vw;
@@ -2212,6 +2215,8 @@ table {
         width: 1.8333333333vw;
         height: 1.8333333333vw; } }
   .contact__input-textarea {
+    padding: 3.7333333333vw;
+    cursor: pointer;
     margin-top: 3.2vw;
     width: 100%;
     height: 31.6vw;
@@ -2220,17 +2225,16 @@ table {
     border-radius: 6px; }
     @media screen and (min-width: 768px) {
       .contact__input-textarea {
+        padding: 1.5vw;
         margin-top: 2vw;
         width: 100%;
         height: 13.9166666667vw; } }
     .contact__input-textarea::placeholder {
-      padding: 3.7333333333vw;
       font-size: 3.4666666667vw;
       color: rgba(0, 0, 0, 0.502);
       text-align: left; }
       @media screen and (min-width: 768px) {
         .contact__input-textarea::placeholder {
-          padding-left: 1.5vw;
           font-size: 1.3333333333vw; } }
   .contact__policy {
     font-size: 3.4666666667vw;
@@ -2268,12 +2272,14 @@ table {
         width: 50vw;
         height: 6vw;
         line-height: 6vw; } }
-  @media screen and (min-width: 768px) {
-    .contact__btn-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto; } }
+  .contact__btn-box {
+    cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      .contact__btn-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto; } }
 
 .news {
   padding-bottom: 11.7333333333vw;
@@ -2337,12 +2343,12 @@ table {
     font-size: 3.7333333333vw;
     color: #7c6f7b;
     font-weight: bold;
-    line-height: 4.2vw;
+    line-height: 6.2vw;
     text-align: center;
     border: 1px solid #cbc4ca;
     border-radius: 34px;
     width: 42.4vw;
-    height: 4.2vw;
+    height: 6.2vw;
     position: relative; }
     @media screen and (min-width: 768px) {
       .news__more {
@@ -2426,6 +2432,7 @@ table {
         width: 2.9166666667vw;
         height: 2.9166666667vw; } }
   .footer__copy {
+    white-space: nowrap;
     font-size: 2.9333333333vw;
     color: black;
     line-height: 0.773;
@@ -2520,5 +2527,107 @@ table {
 .micromodal-slide .modal-container,
 .micromodal-slide .modal-overlay {
   will-change: transform; }
+
+.modal-form__overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh; }
+.modal-form__container {
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff; }
+  @media screen and (max-width: 767px) {
+    .modal-form__container {
+      width: 90%; } }
+  @media screen and (min-width: 768px) {
+    .modal-form__container {
+      width: 56.6666666667vw;
+      height: 51.25vw; } }
+.modal-form__open-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px; }
+  .modal-form__open-btn::before {
+    content: "\2715";
+    color: #7c6f7b;
+    font-size: 30px;
+    line-height: 1.7; }
+.modal-form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    .modal-form__inner {
+      width: 98%; } }
+  @media screen and (min-width: 768px) {
+    .modal-form__inner {
+      width: 43.5833333333vw; } }
+.modal-form__title {
+  font-size: 4.2666666667vw;
+  font-weight: bold;
+  color: #7c6f7b;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .modal-form__title {
+      font-size: 3vw; } }
+.modal-form__sub-title {
+  font-family: "Manrope";
+  font-size: 3.4666666667vw;
+  color: #cbc4ca;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2; }
+  @media screen and (min-width: 768px) {
+    .modal-form__sub-title {
+      font-size: 2.1666666667vw; } }
+@media screen and (max-width: 767px) {
+  .modal-form__btn-box.contact__btn-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4vw;
+    width: 100%;
+    height: 8vw; } }
+@media screen and (min-width: 768px) {
+  .modal-form__btn-box.contact__btn-box {
+    width: 32.5vw;
+    height: 5vw; } }
+@media screen and (max-width: 767px) {
+  .modal-form__btn.contact__btn {
+    font-size: 2.9333333333vw;
+    line-height: 8vw; } }
+@media screen and (min-width: 768px) {
+  .modal-form__btn.contact__btn {
+    line-height: 5vw; } }
+@media screen and (max-width: 767px) {
+  .modal-form__input.contact__input {
+    width: 100%;
+    height: 8vw; } }
+@media screen and (max-width: 767px) {
+  .modal-form__group.contact__group {
+    margin-top: 2.9333333333vw; } }
+@media screen and (min-width: 768px) {
+  .modal-form__group.contact__group {
+    margin: 1.6666666667vw 0 2.5vw; } }
+@media screen and (max-width: 767px) {
+  .modal-form__policy.contact__policy {
+    margin: 3.3333333333vw 0; } }
+@media screen and (min-width: 768px) {
+  .modal-form__policy.contact__policy {
+    margin: 5px 0; } }
+@media screen and (min-width: 768px) {
+  .modal-form__check-group.contact__check-group {
+    height: 2vw; } }
 
 /*# sourceMappingURL=style.css.map */

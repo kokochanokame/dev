@@ -151,6 +151,7 @@
   }
   
   &__video-play {
+	cursor: pointer;
 	width: 100%;
 	height: auto;
 	@include mq(pc) {

@@ -74,12 +74,12 @@
 	font-size: vw($sp-width, 28);
 	color: rgb(124, 111, 123);
 	font-weight: bold;
-	line-height: 4.2vw;
+	line-height: 6.2vw;
 	text-align: center;
 	border: 1px solid #cbc4ca;
 	border-radius: 34px;
 	width: vw($sp-width, 318);
-	height: 4.2vw;
+	height: 6.2vw;
 	position: relative;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);

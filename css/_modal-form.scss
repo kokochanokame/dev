@@ -1,0 +1,139 @@
+.modal-form {
+  
+  &__overlay {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0,0,0,.6);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+  }
+ 
+ 
+  
+  &__container {
+	position: relative;
+	margin: 0 auto;
+	background-color: #fff;
+	
+	@include mq(sp) {
+	  width: 90%;
+	}
+	@include mq(pc) {
+	  width: vw($pc-width, 680);
+	  height: vw($pc-width, 615);
+	}
+  }
+  &__open-btn {
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	&::before {
+	content: "\2715";
+	color: #7c6f7b;
+	font-size: 30px;
+	line-height: 1.7;
+  }
+}
+  &__inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	@include mq(sp) {
+	  width: 98%;
+	}
+	@include mq(pc) {
+	  width: vw($pc-width, 523);
+	}
+  }
+  
+  &__title {
+	font-size: vw($sp-width, 32);
+	font-weight: bold;
+	color: #7c6f7b;
+	text-align: center;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 36);
+	
+	}
+  }
+  
+  
+  &__sub-title {
+	font-family: $font_en;
+	font-size: vw($sp-width, 26);
+	color: #cbc4ca;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.2;
+	@include mq(pc) {
+	  font-size: vw($pc-width, 26);
+	}
+  }
+  &__btn-box.contact__btn-box {
+	@include mq(sp) {
+	  display: flex;
+	  align-items: center;
+	  flex-direction: column;
+	  margin-top: vw($sp-width, 30);
+	  width: 100%;
+	  height: vw($sp-width, 60);
+	  
+	}
+	@include mq(pc) {
+	  width: vw($pc-width, 390);
+	  height: vw($pc-width, 60);
+	}
+  }
+  
+  &__btn.contact__btn {
+	@include mq(sp) {
+	  font-size: vw($sp-width, 22);
+	  line-height: vw($sp-width, 60);
+	}
+	@include mq(pc) {
+	  line-height: vw($pc-width, 60);
+	}
+	
+  }
+  
+&__input.contact__input {
+  @include mq(sp) {
+	width: 100%;
+	height: vw($sp-width, 60);
+  }
+}
+  
+  &__group.contact__group {
+	@include mq(sp){
+	  margin-top: vw($sp-width, 22);
+	}
+	@include mq(pc) {
+	margin: vw($pc-width, 20) 0 vw($pc-width, 30);
+	
+	}
+  }
+  
+  &__policy.contact__policy {
+	@include mq(sp) {
+	  margin: vw($sp-width, 25) 0;
+	}
+	@include mq(pc) {
+	  margin: 5px 0;
+	}
+  }
+  
+  &__check-group.contact__check-group{
+	@include mq(pc) {
+	  height: 2vw;
+	}
+  }
+}

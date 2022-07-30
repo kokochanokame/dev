@@ -55,12 +55,15 @@
 	border-radius: 4px;
 	line-height: 1.2;
 	@include mq(pc) {
+	  
 	  font-size: vw($pc-width, 15);
 	  padding: 0 vw($sp-width, 10);
 	}
   }
   
   &__input {
+	cursor: pointer;
+	padding-left: vw($sp-width, 28);
 	margin-top: vw($sp-width, 15);
 	width: 100%;
 	height: vw($sp-width, 80);
@@ -69,17 +72,17 @@
 	background-color: #f1f3f5;
 	@include mq(pc) {
 	  margin-top: 0;
+	  padding-left: vw($pc-width, 18);
 	  width: vw($pc-width, 522);
 	  height: vw($pc-width, 44);
 	}
 	
 	&::placeholder {
-	  padding-left: vw($sp-width, 28);
 	  font-size: vw($sp-width, 26);
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
-		padding-left: vw($pc-width, 18);
+		
 		font-size: vw($pc-width, 16);
 	  }
 	}
@@ -113,6 +116,7 @@
   }
 }
   &__check-box {
+	cursor: pointer;
 	margin-right: vw($sp-width, 24);
 	border: 1px solid #717171;
 	width: vw($sp-width, 35);
@@ -124,6 +128,8 @@
   }
   
   &__input-textarea {
+	padding: vw($sp-width, 28);
+	cursor: pointer;
 	margin-top: vw($sp-width, 24);
 	width: 100%;
 	height: vw($sp-width, 237);
@@ -131,18 +137,18 @@
 	background-color: #f1f3f5;
 	border-radius: 6px;
 	@include mq(pc) {
+	  padding: vw($pc-width, 18);
 	  margin-top: vw($pc-width, 24);
 	  width: 100%;
 	  height: vw($pc-width, 167);
 	}
 	
 	&::placeholder {
-	  padding: vw($sp-width, 28);
 	  font-size: vw($sp-width, 26);
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
-		padding-left: vw($pc-width, 18);
+		
 		font-size: vw($pc-width, 16);
 	  }
 	}
@@ -191,6 +197,7 @@
   }
   
   &__btn-box {
+	cursor: pointer;
 	@include mq(pc) {
 	  display: flex;
 	flex-direction: column;

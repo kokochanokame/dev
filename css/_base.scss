@@ -76,13 +76,12 @@ table {
 .section__title {
     font-size: vw($sp-width, 50);
     font-family: "YuGothic", serif;
-  color: rgb(124, 111, 123);
+     color: rgb(124, 111, 123);
     font-weight: bold;
     line-height: 1.533;
     text-align: center;
   @include mq(pc) {
     font-size:vw($pc-width, 36);
-    font-family: "YuGothic";
     line-height: 1.666;
   }
 }
