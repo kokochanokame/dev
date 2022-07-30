@@ -9,7 +9,6 @@
   &__title {
 	margin: vw($sp-width, 40) 0;
 	font-size: vw($sp-width, 36);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	line-height: 1.278;
@@ -23,7 +22,6 @@
   
   &__card {
 	width: 95%;
-	//width: vw($sp-width, 650);
 	height: vw($sp-width, 770);
 	padding: vw($sp-width, 40);
 	background-color: rgb(255, 255, 255);
@@ -36,7 +34,6 @@
   }
   
   &__img {
-	//width: vw($sp-width, 570);
 	width: 100%;
 	height: vw($sp-width, 348);
 	@include mq(pc) {
@@ -46,10 +43,8 @@
   }
   
   &__name {
-	//margin-top: vw($sp-width, 45);
 	margin-bottom: $sp-width, 20;
 	font-size: vw($sp-width, 40);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	line-height: 0.925;
@@ -76,7 +71,6 @@
   
   &__desc {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	text-align: left;

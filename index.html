@@ -7,16 +7,12 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link rel="stylesheet" href="assets/css/ress.css">
-
-    <!--    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet"/>-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
-<!--    <link rel="stylesheet" href="https://use.typekit.net/eaj2rnu.css">-->
 
 </head>
 <body>
@@ -36,7 +32,7 @@
         <div class="mv__inner">
             <div class="mv__top-image">
                 <figure class="mv__message">
-                    <img src="assets/img/warries@2x.png" alt="Don't worries!">
+                    <img src="/devlabo/assets/img/warries@2x.png" alt="Don't worries!">
                 </figure>
             </div>
             <div class="mv__bottom-image">
@@ -71,31 +67,34 @@
         「受講中に働きながらお金を払うのは大変」<br>
         「卒業後に就職できるか不安」<br>
         「本当にプログラミングが習得できるかわからない」</p>
-    <p class="about__text">のようなプログラミングスクールに通う上で避けては通れない
+    <p class="about__text">のようなプログラミングスクールに通う上で<br class="sp-only">避けては通れない
     <p>
     <p class="about__your"> あなたの</p>
     <strong class="about__point ac-text">お金の不安を100％なくします!</strong>
 </section>
+
+
+<!--イラスト比較-->
 <div class="image__cards">
     <div class="image__card1">
         <h3 class="image__card1__main">ディラボ</h3>
         <figure class="image__card1__main-img">
-            <img src="./assets/img/devlab1@2x.png" alt="受講中の支払いが完全無料！">
+            <img src="/devlabo/assets/img/devlab1@2x.png" alt="受講中の支払いが完全無料！">
         </figure>
-        <p class="image__card__main-text">受講中の支払いが<span class="ac-text">完全無料</span>！※1</p>
+        <p class="image__card__main-text image__card-dev">受講中の支払いが<span class="ac-text">完全無料！</span></p>
     </div>
     <div class="image__card2">
         <h3 class="image__card2__another">他のプログラミングスクール</h3>
         <figure class="image__card2__another-img">
-            <img src="./assets/img/devlab2@2x.png" alt="受講中に数十万円の支払いが発生">
+            <img src="/devlabo/assets/img/devlab2@2x.png" alt="受講中に数十万円の支払いが発生">
         </figure>
-        <p class="image__card__main-text">受講中に<span class="another-text">数十万円の支払いが発生...</span>！※1</p>
+        <p class="image__card__main-text image__card-another">受講中に<span class="another-text">数十万円の支払いが発生...</span></p>
     </div>
 </div>
 
 <section class="payment">
     <div class="container payment__container">
-        <h3 class="payment__sub">支払いは就職成功後でOK！<br><span class="ac-text">受講中の支払いは完全無料</span>！※1</h3>
+        <h3 class="payment__sub">支払いは就職成功後でOK！<br class="sp-only"><span class="ac-text">受講中の支払いは完全無料</span>！※1</h3>
         <p class="payment__desc">
             ディラボでは支払いが「卒業後に就職が決まった段階」から発生します。<br>
             実際にプログラミングで収入が発生したタイミングからの支払いになるため、<br>
@@ -110,9 +109,9 @@
 
         <div class="payment__video">
             <h3 class="payment__video-title">ディラボ紹介動画</h3>
-            <video class="vjs-big-play-centered  payment__video-play" data-setup={} controls playsinline>
-                <!--        <source src="./video.mp4" type="video/mp4">-->
-            </video>
+            <figure class="vjs-big-play-centered  payment__video-play" data-setup={} controls playsinline>
+                <img src="/devlabo/assets/img/about_mv.png" alt="">
+            </figure>
         </div>
     </div>
 </section>
@@ -133,7 +132,7 @@
             何でも相談できる無料カウンセリングを実施しています。</p>
         <ul class="cva__contact">
             <li class="cva__free"><a href="" class="cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
-                <figure class="cva__free-arrow"><img src="assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
+                <figure class="cva__free-arrow"><img src="/devlabo/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
             </a>
             </li>
             <li class="cva__line">
@@ -146,7 +145,7 @@
                         <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
                     </div>
                     <figure class="cva__line-arrow">
-                        <img src="assets/img/line_arrow.png" alt="LINEで無料相談する">
+                        <img src="/devlabo/assets/img/line_arrow.png" alt="LINEで無料相談する">
                     </figure>
                 </a></li>
         </ul>
@@ -166,7 +165,7 @@
                 <span class="ac-text">チームでの開発実績を積む</span>
             </h4>
             <figure class="feature__first-img">
-                <img src="assets/img/feature@2x.png" alt="実際の現場を忠実に再現した学習環境">
+                <img src="/devlabo/assets/img/feature@2x.png" alt="実際の現場を忠実に再現した学習環境">
             </figure>
             <p class="feature__first-text">
                 実際の開発現場では一人でホームページを作るだけのプログラミングとはわけが違います。ディラボでは現場に近い環境を出来るだけ再現し、コミュニケーション能力など実際にプログラムを書くこと以外のスキルについても徹底的に育成します。
@@ -182,13 +181,13 @@
     <div class="feature__sec-wrapper">
         <div class="feature__sec-box">
             <figure class="feature__sec-img1">
-                <img src="/assets/img/graph1@2x.png" alt="求人数">
+                <img src="/devlabo/assets/img/graph1@2x.png" alt="求人数">
             </figure>
         </div>
 
         <div class="feature__sec-box">
             <figure class="feature__sec-img1">
-                <img src="/assets/img/graph2@2x.png" alt="仕事で利用している人数">
+                <img src="/devlabo/assets/img/graph2@2x.png" alt="仕事で利用している人数">
             </figure>
         </div>
     </div>
@@ -199,27 +198,27 @@
     </p>
     <h3 class="third feature__sub-title">24時間学習できる環境を整備</h3>
     <h4 class="feature__third__title">スキマ時間でも勉強しやすい<br class="sp-only"><span class="ac-text">e-ラーニング</span>導入</h4>
-    <video class="vjs-big-play-centered feature__play" data-setup={} controls playsinline>
-        <!--            <source src="./video.mp4" type="video/mp4">-->
-    </video>
+    <fiture class="vjs-big-play-centered feature__play" data-setup={} controls playsinline>
+        <img src="/devlabo/assets/img/02_mv2.png" alt="">
+    </fiture>
 
     <h4 class="feature__third__title">質問回数無制限！<span class="ac-text">独自チャット機能「ディラボチャット」による自習サポート</span></h4>
-    <video class="vjs-big-play-centered feature__play" data-setup={} controls playsinline>
-        <!--            <source src="./video.mp4" type="video/mp4">-->
-    </video>
+    <figure class="vjs-big-play-centered feature__play" data-setup={} controls playsinline>
+        <img src="/devlabo/assets/img/03_mv1.png" alt="">
+    </figure>
 
     <h3 class="forth feature__sub-title">つまづかない学習サポート体制</h3>
     <div class="feature__forth__wrapper">
         <div class="feature__forth__card">
             <h4 class="feature__card-title">技術講師&メンターによる<span class="ac-text">充実のサポート</span></h4>
-            <figure class="feature__forth__img"><img src="assets/img/feature1@2x.jpg" alt=""></figure>
+            <figure class="feature__forth__img"><img src="/devlabo/assets/img/feature1@2x.jpg" alt=""></figure>
 
             <p class="feature__card-desc">
                 プログラミングを教える技術講師と学習方法などをサポートするメンターが1人の生徒をサポートするため、プログラミングのことはもちろん、学習方法やモチベーションの維持まで何でも相談することが可能です！</p>
         </div>
         <div class="feature__forth__card">
             <h4 class="feature__card-title">リアルタイムで質問可能！<span class="ac-text">ライブサポート</span></h4>
-            <figure class="feature__forth__img"><img src="assets/img/feature2@2x.jpg" alt=""></figure>
+            <figure class="feature__forth__img"><img src="/devlabo/assets/img/feature2@2x.jpg" alt=""></figure>
             <p class="feature__card-desc">学習中に浮かんだ疑問をリアルタイムで画面共有などを使いつつ質問できるため、挫折の大きな要因となるつまづきを減らした状態で学習を進めることができます。</p>
         </div>
     </div>
@@ -240,7 +239,7 @@
         </div>
         <div class="feature__fifth__card">
             <h4 class="feature__card-title feature__fifth-title">成績優秀者限定！<br><span class="ac-text">独自の就職先紹介</span></h4>
-            <figure class="fifth__img3 feature__fifth-img"><img src="assets/img/feature5@2x.jpg" alt=""></figure>
+            <figure class="fifth__img3 feature__fifth-img"><img src="/devlabo/assets/img/feature5@2x.jpg" alt=""></figure>
 
             <p class="feature__card-desc feature__fifth-desc">e-ラーニングの正答率や提出された課題のクオリティ
                 などを総合的に判断し、成績優秀者と認められた方に関してはディラボが有する独自の紹介ルートで就職先をご紹介します。</p>
@@ -267,20 +266,20 @@
             何でも相談できる無料カウンセリングを実施しています。</p>
         <ul class="cva__contact">
             <li class="cva__free"><a href="" class="cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
-                <figure class="cva__free-arrow"><img src="assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
+                <figure class="cva__free-arrow"><img src="/devlabo/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
             </a>
             </li>
             <li class="cva__line">
                 <a href="" class="cva__line-link">
                     <figure class="cva__line-icon">
-                        <img src="assets/img/line.png" alt="ラインで相談する">
+                        <img src="/devlabo/assets/img/line.png" alt="ラインで相談する">
                     </figure>
                     <div class="cva__line-center">
                         <p class="cva__line-top">24時間受付中！</p>
                         <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
                     </div>
                     <figure class="cva__line-arrow">
-                        <img src="assets/img/line_arrow.png" alt="LINEで無料相談する">
+                        <img src="/devlabo/assets/img/line_arrow.png" alt="LINEで無料相談する">
                     </figure>
                 </a></li>
         </ul>
@@ -300,7 +299,7 @@
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
-                    <img src="assets/img/hashimoto@2x.jpg" alt="">
+                    <img src="/devlabo/assets/img/hashimoto@2x.jpg" alt="">
                 </figure>
                 <h3 class="tutor__name">橋本 將</h3>
                 <p class="tutor__en ac-text">Masaru Hashimoto</p>
@@ -310,7 +309,7 @@
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
-                    <img src="assets/img/yamamoto@2x.jpg" alt="">
+                    <img src="/devlabo/assets/img/yamamoto@2x.jpg" alt="">
                 </figure>
                 <h3 class="tutor__name">山本 杏奈</h3>
                 <p class="tutor__en ac-text">Anna Yamamoto</p>
@@ -320,7 +319,7 @@
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
-                    <img src="assets/img/nagase@2x.jpg" alt="">
+                    <img src="/devlabo/assets/img/nagase@2x.jpg" alt="">
                 </figure>
                 <h3 class="tutor__name">長澤 弘一郎</h3>
                 <p class="tutor__en ac-text">Koichiro Nagasawa</p>
@@ -330,7 +329,7 @@
         <div class="slider-img">
             <div class="tutor__card">
                 <figure class="tutor__img">
-                    <img src="assets/img/sasugo@2x.jpg" alt="">
+                    <img src="/devlabo/assets/img/sasugo@2x.jpg" alt="">
                 </figure>
                 <h3 class="tutor__name">指尾 慶</h3>
                 <p class="tutor__en ac-text">Sasuo Suguru</p>
@@ -360,10 +359,39 @@
     <p class="section__sub-title">STUDENT VOICE</p>
 
     <div class="student__wrapper container">
+<!--モーダル-->
+        <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                <div
+                        class="modal-container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-1-title"
+                >
+                    <header class="modal-header">
+                        <h2 class="modal-title" id="modal-1-title"></h2>
+                        <button
+                                class="modal-close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal-content" id="modal-1-content">
+                 <figure class="modal__img">
+                     <img src="/devlabo/assets/img/student_modal.png" alt="">
+                 </figure>
+                        <!-- /.modal-text -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="student__card">
-            <video class="vjs-big-play-centered student__play" data-setup={} controls playsinline>
-                <!--            <source src="./video.mp4" type="video/mp4">-->
-            </video>
+            <!-- 開くボタン -->
+            <button data-micromodal-trigger="modal-1" class="modal-open">
+                <figure class="student__play">
+                    <img src="/devlabo/assets/img/student.png" alt="">
+                </figure>
+            </button>
             <h3 class="student__name">山田 太郎さん 23歳</h3>
             <dl class="student__info">
                 <dt class="student__info-title">前職：</dt>
@@ -373,10 +401,39 @@
             </dl>
         </div>
 
+        <!--モーダル-->
+        <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                <div
+                        class="modal-container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-2-title"
+                >
+                    <header class="modal-header">
+                        <h2 class="modal-title" id="modal-2-title"></h2>
+                        <button
+                                class="modal-close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal-content" id="modal-2-content">
+                        <figure class="modal__img">
+                            <img src="/devlabo/assets/img/student_modal.png" alt="">
+                        </figure>
+                        <!-- /.modal-text -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="student__card">
-            <video class="vjs-big-play-centered student__play" data-setup={} controls playsinline>
-                <!--            <source src="./video.mp4" type="video/mp4">-->
-            </video>
+            <!-- 開くボタン -->
+            <button data-micromodal-trigger="modal-2" class="modal-open">
+                <figure class="student__play">
+                    <img src="/devlabo/assets/img/student.png" alt="">
+                </figure>
+            </button>
             <h3 class="student__name">山田 太郎さん 23歳</h3>
             <dl class="student__info">
                 <dt class="student__info-title">前職：</dt>
@@ -386,10 +443,39 @@
             </dl>
         </div>
 
+        <!--モーダル-->
+        <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+            <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+                <div
+                        class="modal-container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-3-title"
+                >
+                    <header class="modal-header">
+                        <h2 class="modal-title" id="modal-3-title"></h2>
+                        <button
+                                class="modal-close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal-content" id="modal-3-content">
+                        <figure class="modal__img">
+                            <img src="/devlabo/assets/img/student_modal.png" alt="">
+                        </figure>
+                        <!-- /.modal-text -->
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="student__card">
-            <video class="vjs-big-play-centered student__play" data-setup={} controls playsinline>
-                <!--            <source src="./video.mp4" type="video/mp4">-->
-            </video>
+            <!-- 開くボタン -->
+            <button data-micromodal-trigger="modal-3" class="modal-open">
+                <figure class="student__play">
+                    <img src="/devlabo/assets/img/student.png" alt="">
+                </figure>
+            </button>
             <h3 class="student__name">山田 太郎さん 23歳</h3>
             <dl class="student__info">
                 <dt class="student__info-title">前職：</dt>
@@ -398,6 +484,34 @@
                 <dd class="student__info-ans"></dd>
             </dl>
         </div>
+
+
+<!--        <div class="student__card">-->
+<!--            <figure class="vjs-big-play-centered student__play" data-setup={} controls playsinline>-->
+<!--                <img src="/devlabo/assets/img/student.png" alt="">-->
+<!--            </figure>-->
+
+<!--            <h3 class="student__name">山田 太郎さん 23歳</h3>-->
+<!--            <dl class="student__info">-->
+<!--                <dt class="student__info-title">前職：</dt>-->
+<!--                <dd class="student__info-ans"></dd>-->
+<!--                <dt class="student__info-title">卒業後の勤務先：</dt>-->
+<!--                <dd class="student__info-ans"></dd>-->
+<!--            </dl>-->
+<!--        </div>-->
+
+<!--        <div class="student__card">-->
+<!--            <figure class="vjs-big-play-centered student__play" data-setup={} controls playsinline>-->
+<!--                <img src="/devlabo/assets/img/student.png" alt="">-->
+<!--            </figure>-->
+<!--            <h3 class="student__name">山田 太郎さん 23歳</h3>-->
+<!--            <dl class="student__info">-->
+<!--                <dt class="student__info-title">前職：</dt>-->
+<!--                <dd class="student__info-ans"></dd>-->
+<!--                <dt class="student__info-title">卒業後の勤務先：</dt>-->
+<!--                <dd class="student__info-ans"></dd>-->
+<!--            </dl>-->
+<!--        </div>-->
     </div>
 </section>
 <!--生徒の声ここまで-->
@@ -431,7 +545,7 @@
                         <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
                     </div>
                     <figure class="cva__line-arrow">
-                        <img src="assets/img/line_arrow.png" alt="LINEで無料相談する">
+                        <img src="/devlabo/assets/img/line_arrow.png" alt="LINEで無料相談する">
                     </figure>
                 </a></li>
         </ul>
@@ -446,7 +560,7 @@
             <th class="dev-table__title"></th>
             <th scope="col">
                 <div class="dev-table__main t-center">
-                    <figure class=" table__logo"><img src="/assets/img/table-logo@2x.png" alt="ディラボ">
+                    <figure class=" table__logo"><img src="/devlabo/assets/img/table-logo@2x.png" alt="ディラボ">
                     </figure>
                 </div>
             </th>
@@ -467,7 +581,7 @@
 
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">支払い<br>
+            <th class="dev-table__th" >支払い<br class="sp-only">
                 方法
             </th>
             <td class="dev-table__main-td sbk cross">卒業後に就職が
@@ -481,7 +595,7 @@
             </td>
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">メイン<br>
+            <th class="dev-table__th" >メイン<br class="sp-only">
                 言語
             </th>
             <td class="dev-table__main-td sbk c">現場でよく使わ
@@ -493,13 +607,13 @@
             </td>
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">定員</th>
+            <th class="dev-table__th" >定員</th>
             <td class="dev-table__main-td sbk">1期10名まで</td>
             <td class="dev-table__sub-td sbk cross">50〜100名</td>
             <td class="dev-table__sub-td sbk t">言及なし</td>
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">指導<br>
+            <th class="dev-table__th" >指導<br class="sp-only">
                 方針
             </th>
             <td class="dev-table__main-td sbk">現場で活躍する
@@ -513,7 +627,7 @@
             </td>
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">特徴</th>
+            <th class="dev-table__th" >特徴</th>
             <td class="dev-table__main-td">質問し放題、
                 e-ラーニング
                 擬似チーム開発、
@@ -528,7 +642,7 @@
             </td>
         </tr>
         <tr>
-            <th class="dev-table__th" width="11vw">開発案件<br>
+            <th class="dev-table__th" >開発案件<br>
                 に携われ<br>
                 るまでの<br>
                 スピード<br>
@@ -765,21 +879,21 @@
     <p class="section__sub-title">FLOW</p>
     <div class="step__wrapper">
         <div class="step__card">
-            <figure class="step__img step1"><img src="/assets/img/flow1@2x.jpg" alt="カウンセリング予約"></figure>
+            <figure class="step__img step1"><img src="/devlabo/assets/img/flow1@2x.jpg" alt="カウンセリング予約"></figure>
             <div class="step__desc">
                 <h3 class="step__desc-title">カウンセリング予約</h3>
                 <p class="step__desc-text">HPまたはLINEよりご希望の日程をご連絡ください。</p>
             </div>
         </div>
         <div class="step__card">
-            <figure class="step__img step2"><img src="/assets/img/flow2p@2x.jpg" alt="参加準備"></figure>
+            <figure class="step__img step2"><img src="/devlabo/assets/img/flow2p@2x.jpg" alt="参加準備"></figure>
             <div class="step__desc">
                 <h3 class="step__desc-title">参加準備</h3>
                 <p class="step__desc-text">参加用のURLが送信されますので当日までに確認してください。</p>
             </div>
         </div>
         <div class="step__card">
-            <figure class="step__img step3"><img src="/assets/img/flow3@2x.jpg" alt="オンラインカウンセリング"></figure>
+            <figure class="step__img step3"><img src="/devlabo/assets/img/flow3@2x.jpg" alt="オンラインカウンセリング"></figure>
             <div class="step__desc">
                 <h3 class="step__desc-title">オンライン<br class="sp-only">カウンセリング</h3>
                 <p class="step__desc-text">オンラインにてカウンセリングを行います。キャリアに関するお悩みなどお気軽にご相談ください。</p>
@@ -935,7 +1049,7 @@
             何でも相談できる無料カウンセリングを実施しています。</p>
         <ul class="cva__contact">
             <li class="cva__free"><a href="" class="cva__free-link"><span class="ac-text">無料カウンセリングに</span>参加する
-                <figure class="cva__free-arrow"><img src="assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
+                <figure class="cva__free-arrow"><img src="/devlabo/assets/img/free_arrow.png" alt="無料カウンセリングに参加する"></figure>
             </a>
             </li>
             <li class="cva__line">
@@ -948,7 +1062,7 @@
                         <p class="cva__line-bottom"><span class="line-ac">LINEで</span>無料相談する</p>
                     </div>
                     <figure class="cva__line-arrow">
-                        <img src="assets/img/line_arrow.png" alt="LINEで無料相談する">
+                        <img src="/devlabo/assets/img/line_arrow.png" alt="LINEで無料相談する">
                     </figure>
                 </a></li>
         </ul>
@@ -1068,7 +1182,7 @@
 </section>
 
 <footer class="footer container">
-    <figure class="footer__logo"><img src="/assets/img/footer_logo@2x.png" alt="ディラボ"></figure>
+    <figure class="footer__logo"><img src="/devlabo/assets/img/footer_logo@2x.png" alt="ディラボ"></figure>
     <ul class="footer__list">
         <li class="footer__list-item"><a href="#" class="footer__list-link">運営者情報</a></li>
         <li class="footer__list-item"><a href="#" class="footer__list-link">利用規約</a></li>
@@ -1093,7 +1207,7 @@
 
                 <a href="" class="footer__sns-link">
                     <figure class="footer__sns-img">
-                        <img src="assets/img/sns2@2x.png" alt="インスタグラム">
+                        <img src="/devlabo/assets/img/sns2@2x.png" alt="インスタグラム">
             </figure>
                 </a>
         </li>
@@ -1101,14 +1215,14 @@
 
             <a href="/" class="footer__sns-link">
                 <figure class="footer__sns-img">
-                <img src="assets/img/sns3@2x.png" alt="ティックトック">
+                <img src="/devlabo/assets/img/sns3@2x.png" alt="ティックトック">
                 </figure>
             </a>
         </li>
         <li class="footer__sns-item">
             <a href="" class="footer__sns-link">
                 <figure class="footer__sns-img">
-                    <img src="assets/img/sns4@2x.png" alt="ファイル">
+                    <img src="/devlabo/assets/img/sns4@2x.png" alt="ファイル">
                 </figure>
             </a>
         </li>
@@ -1120,8 +1234,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<!--<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/jquery.waypoints.min.js"></script>
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

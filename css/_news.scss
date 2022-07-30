@@ -17,7 +17,6 @@
   
   &__sub {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(124, 111, 123);
 	font-weight: bold;
 	line-height: 2.885;
@@ -73,21 +72,20 @@
   &__more {
 	display: inline-block;
 	font-size: vw($sp-width, 28);
-	font-family: "YuGothic";
 	color: rgb(124, 111, 123);
 	font-weight: bold;
-	line-height: vw($sp-width, 68);
+	line-height: 4.2vw;
 	text-align: center;
 	border: 1px solid #cbc4ca;
 	border-radius: 34px;
 	width: vw($sp-width, 318);
-	height: vw($sp-width, 68);
+	height: 4.2vw;
 	position: relative;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 16);
-	  line-height: vw($sp-width, 47);
-	  width: vw($sp-width, 190);
-	  height: vw($sp-width, 47);
+	  line-height: vw($pc-width, 47);
+	  width: vw($pc-width, 190);
+	  height: vw($pc-width, 47);
 	}
 	  &::after {
 		content: "";
@@ -97,7 +95,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		right: vw($sp-width, 60);
-		background: url("/assets/img/arrow_bottom@2x.png") center center no-repeat;
+		background: url("/devlabo/assets/img/arrow_bottom@2x.png") center center no-repeat;
 		background-size: contain;
 		@include mq(pc) {
 		  width: vw($pc-width, 10);

@@ -31,7 +31,6 @@
   
   &__list-item {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.538;
 	text-align: center;
@@ -42,7 +41,6 @@
   
   &__attention {
 	font-size: vw($sp-width, 24);
-	font-family: "YuGothic";
 	color: rgb(34, 34, 34);
 	line-height: 1.333;
 	text-align: left;
@@ -75,7 +73,6 @@
   
   &__copy {
 	font-size: vw($sp-width, 22);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 0.773;
 	text-align: center;

@@ -33,9 +33,8 @@
   }
   
   &__play {
-	width: 100%;
-	max-width: 592px;
-	height: vw($sp-width, 380);
+	width: vw($sp-width, 590);
+	height: vw($sp-width, 390);
 	margin: 0 auto;
 	@include mq(pc) {
 	  width: vw($pc-width, 270);
@@ -46,7 +45,6 @@
   &__name {
 	margin-top: vw($sp-width, 31);
 	font-size: vw($sp-width, 30);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	line-height: 1.609;
@@ -59,7 +57,6 @@
   
   &__info-title {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	font-weight: normal;
@@ -72,7 +69,6 @@
   
   &__info-ans {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	font-weight: normal;

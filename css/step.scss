@@ -117,24 +117,25 @@
   }
   
   &__desc-title {
-	font-family: "YuGothic";
 	font-size: vw($sp-width, 30);
 	color: rgb(0, 0, 0);
 	font-weight: bold;
-	line-height: 0.733;
+	line-height: 1.2;
 	@include mq(pc) {
 	  margin-top: vw($pc-width,31);
-	  margin-bottom: vw($pc-width, 18);
+	  margin-bottom: vw($pc-width, 16);
 	  font-size: vw($pc-width, 22);
 	}
   }
   
   &__desc-text {
+	margin-top: vw($sp-width, 10);
 	font-size: vw($sp-width, 26);
 	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.385;
 	@include mq(pc) {
+	  margin-top: 0;
 	  font-size: vw($pc-width, 18);
 	}
   }

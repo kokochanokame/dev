@@ -12,9 +12,9 @@
   }
   
   &__sub-title {
+	white-space: nowrap;
 	display: inline-block;
 	font-size: vw($sp-width, 23);
-	font-family: "YuGothic", serif;
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	line-height: 1.41;
@@ -22,7 +22,7 @@
 	border-bottom: 1px solid rgb(255, 113, 101);
 	@include mq(pc) {
 		font-size: vw($pc-width, 24);
-		line-height: 1.077;
+		//line-height: 1.077;
 	 
 	}
   }
@@ -30,7 +30,6 @@
   &__text {
 	margin-top: vw($sp-width, 48);
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic", serif;
 	color: rgb(0, 0, 0);
 	font-weight: normal;
 	line-height: 1.41;
@@ -44,15 +43,14 @@
   
   &__your {
 	margin-top: vw($sp-width, 30);
-	font-size: vw($sp-width, 18);
-	font-family: "YuGothic", serif;
+	font-size: vw($sp-width, 26);
 	color: rgb(0, 0, 0);
 	font-weight: normal;
 	line-height: 1.41;
 	text-align: center;
 	@include mq(pc) {
 	  margin-top: vw($pc-width, 30);
-	  font-size: vw($pc-width, 18);
+	  font-size: vw($pc-width, 22);
 	}
   }
   

@@ -2,7 +2,7 @@
   padding-top: vw($sp-width, 240);
   width: 100vw;
   height: vw($sp-width, 894);
-  background-image: url(/assets/img/sp_mv.png);
+  background-image: url(/devlabo/assets/img/sp_mv.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -42,7 +42,6 @@
   
   &__text {
 	  font-size:vw($sp-width, 26);
-	font-family: "YuGothic", serif;
 	  color: rgb(255, 255, 255);
 	  font-weight: bold;
 	  line-height: 1.615;

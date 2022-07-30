@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url(/assets/img/sp_campaign.png);
+  background-image: url(/devlabo/assets/img/sp_campaign.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -14,7 +14,7 @@
 	margin-top: vw($pc-width, -90);
 	padding-top: vw($pc-width, 20);
 	padding-bottom: vw($pc-width, 28);
-	background-image: url(/assets/img/pc_cp2x.jpg);
+	background-image: url(/devlabo/assets/img/pc_cp2x.jpg);
 	width: vw($pc-width, 760);
 	height: vw($pc-width, 224);
   }
@@ -24,7 +24,6 @@
 	background: url(/assets/img/cv_top.png) no-repeat center;
 	background-size: contain;
 	font-size: vw($sp-width, 22);
-	font-family: "YuGothic", serif;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: 1.182;
@@ -32,7 +31,6 @@
 	@include mq(pc) {
 	  padding: vw($pc-width, 5) vw($pc-width, 45);
 	  font-size: vw($pc-width, 22);
-	  font-family: "YuGothic";
 	  line-height: 1.182;
 	}
   }
@@ -71,7 +69,6 @@
 	padding: vw($sp-width, 17) vw($sp-width, 52);
 	display: inline-block;
 	font-size: vw($sp-width, 24);
-	font-family: "YuGothic", serif;
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: 1.083;

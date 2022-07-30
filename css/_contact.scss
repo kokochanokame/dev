@@ -36,7 +36,6 @@
   &__label {
 	white-space: nowrap;
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	font-weight: bold;
 	line-height: 1;
@@ -49,7 +48,6 @@
   &__required {
 	padding: 0 vw($sp-width, 14);
 	font-size: vw($sp-width, 24);
-	font-family: "YuGothic";
 	color: rgb(255, 113, 101);
 	font-weight: bold;
 	text-align: center;
@@ -78,7 +76,6 @@
 	&::placeholder {
 	  padding-left: vw($sp-width, 28);
 	  font-size: vw($sp-width, 26);
-	  font-family: "YuGothic";
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
@@ -99,7 +96,6 @@
 	margin-bottom: vw($sp-width, 20);
 	display: block;
 	font-size: vw($sp-width, 28);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.714;
 	text-align: left;
@@ -143,7 +139,6 @@
 	&::placeholder {
 	  padding: vw($sp-width, 28);
 	  font-size: vw($sp-width, 26);
-	  font-family: "YuGothic";
 	  color: rgba(0, 0, 0, 0.502);
 	  text-align: left;
 	  @include mq(pc) {
@@ -155,7 +150,6 @@
   
   &__policy {
 	font-size: vw($sp-width, 26);
-	font-family: "YuGothic";
 	color: rgb(0, 0, 0);
 	line-height: 1.154;
 	text-align: left;
@@ -180,7 +174,6 @@
   &__order {
 	margin-top: vw($sp-width, 70);
 	font-size: vw($sp-width, 34);
-	font-family: "YuGothic";
 	color: rgb(255, 255, 255);
 	font-weight: bold;
 	line-height: vw($sp-width, 90);
@@ -191,12 +184,12 @@
 	height: vw($sp-width, 90);
 	@include mq(pc) {
 	  font-size: vw($pc-width, 22);
-	  width: vw($sp-width, 400);
-	  height: vw($sp-width, 58);
-	  line-height: vw($sp-width, 58);
-	  
+	  width: 50vw;
+	  height: 6vw;
+	  line-height:6vw;
 	}
   }
+  
   &__btn-box {
 	@include mq(pc) {
 	  display: flex;
