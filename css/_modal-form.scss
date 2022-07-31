@@ -24,7 +24,7 @@
 	background-color: #fff;
 	
 	@include mq(sp) {
-	  width: 100%;
+	  width:90vw;
 	}
 	@include mq(pc) {
 	  width: vw($pc-width, 680);

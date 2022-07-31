@@ -21,6 +21,18 @@
 	font-weight: bold;
 	line-height: 1.278;
 	text-align: left;
+	position: relative;
+	&:before {
+	content: "※１";
+	  position: absolute;
+	  font-size: 10px;
+	  top: 7vw;
+	  right: -15px;
+	  @include mq(pc) {
+		top: 0vw;
+		right: -15px;
+	  }
+	}
 	@include mq(pc) {
 	  font-size: vw($pc-width, 26);
 	  line-height: 1.385;

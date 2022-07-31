@@ -27,7 +27,7 @@
 	background-size: contain;
 	@include mq(pc) {
 	  margin-left: vw($pc-width, 113);
-	  width: 80%;
+	  width: 90%;
 	  font-size: vw($pc-width, 36);
 	}
   }

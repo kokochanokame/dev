@@ -20,7 +20,7 @@ $(function () {
   });
 });
 
-//モーダル
+//モーダル生徒の声
 MicroModal.init({
   disableScroll: true,
   awaitOpenAnimation: true,
@@ -29,12 +29,7 @@ MicroModal.init({
 
 
 
-// $(window).scroll(function() {
-//   let nowscroll = $(window).scrollTop() ;
-//   if(nowscroll >= 700){
-//     $('.modaal').click();
-//   }
-// });
+//モーダル資料請求
 $(window).scroll(function () {
   let nowscroll = $(window).scrollTop();
   if (nowscroll >= 700) {
@@ -44,3 +39,12 @@ $(window).scroll(function () {
     }
   }
 });
+
+
+// $(window).scroll(function () {
+//   let nowscroll = $(window).scrollTop();
+//   if (nowscroll >= 100) {
+//     $(".modaal").click();
+//   }
+// });
+

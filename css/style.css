@@ -480,7 +480,18 @@ table {
     color: black;
     font-weight: bold;
     line-height: 1.278;
-    text-align: left; }
+    text-align: left;
+    position: relative; }
+    .payment__sub:before {
+      content: "※１";
+      position: absolute;
+      font-size: 10px;
+      top: 7vw;
+      right: -15px; }
+      @media screen and (min-width: 768px) {
+        .payment__sub:before {
+          top: 0vw;
+          right: -15px; } }
     @media screen and (min-width: 768px) {
       .payment__sub {
         font-size: 2.1666666667vw;
@@ -803,7 +814,7 @@ table {
   .cva__line-arrow {
     position: absolute;
     right: 7.3333333333vw;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     width: 2.6666666667vw;
     height: 2.6666666667vw; }
@@ -900,7 +911,7 @@ table {
     @media screen and (min-width: 768px) {
       .feature__sub-title {
         margin-left: 9.4166666667vw;
-        width: 80%;
+        width: 90%;
         font-size: 3vw; } }
   .feature__first-title {
     margin-top: 8.5333333333vw;
@@ -1455,6 +1466,7 @@ table {
     font-size: 3.2vw;
     font-weight: bold;
     line-height: 1.25;
+    letter-spacing: -1px;
     text-align: center;
     border: 2px solid #fff;
     background: #ffecdb;
@@ -1703,7 +1715,15 @@ table {
     color: #222222;
     font-weight: bold;
     line-height: 1.429;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    padding-right: 0; }
+    .plan__card-price--small::before {
+      content: "";
+      position: absolute;
+      font-size: 10px;
+      right: 6vw;
+      top: 0; }
     @media screen and (min-width: 768px) {
       .plan__card-price--small {
         display: none; } }
@@ -1840,6 +1860,12 @@ table {
 
 .plan__flow-tr:nth-of-type(even) {
   background-color: #efefef; }
+
+.short-small::before {
+  content: "※1"; }
+
+.expert-small::before {
+  content: "※2"; }
 
 .step {
   padding-top: 9.3333333333vw;
@@ -2548,7 +2574,7 @@ table {
   background-color: #fff; }
   @media screen and (max-width: 767px) {
     .modal-form__container {
-      width: 100%; } }
+      width: 90vw; } }
   @media screen and (min-width: 768px) {
     .modal-form__container {
       width: 56.6666666667vw;
