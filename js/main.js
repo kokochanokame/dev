@@ -29,9 +29,18 @@ MicroModal.init({
 
 
 
-$(window).scroll(function() {
-  let nowscroll = $(window).scrollTop() ;
-  if(nowscroll >= 700){
-    $('.modaal').click();
+// $(window).scroll(function() {
+//   let nowscroll = $(window).scrollTop() ;
+//   if(nowscroll >= 700){
+//     $('.modaal').click();
+//   }
+// });
+$(window).scroll(function () {
+  let nowscroll = $(window).scrollTop();
+  if (nowscroll >= 700) {
+    if (!localStorage.hasOwnProperty('modal')) {
+      $('.modaal').click();
+      localStorage.setItem('modal', 'opend');
+    }
   }
 });
