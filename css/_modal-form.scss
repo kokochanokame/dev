@@ -24,7 +24,7 @@
 	background-color: #fff;
 	
 	@include mq(sp) {
-	  width: 90%;
+	  width: 100%;
 	}
 	@include mq(pc) {
 	  width: vw($pc-width, 680);
@@ -48,7 +48,7 @@
 	align-items: center;
 	margin: 0 auto;
 	@include mq(sp) {
-	  width: 98%;
+	  width: 96%;
 	}
 	@include mq(pc) {
 	  width: vw($pc-width, 523);

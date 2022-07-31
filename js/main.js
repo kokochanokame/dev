@@ -27,3 +27,11 @@ MicroModal.init({
   awaitCloseAnimation: true
 });
 
+
+
+$(window).scroll(function() {
+  let nowscroll = $(window).scrollTop() ;
+  if(nowscroll >= 700){
+    $('.modaal').click();
+  }
+});

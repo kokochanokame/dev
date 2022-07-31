@@ -1,12 +1,12 @@
 .about {
   padding-bottom: vw($sp-width, 74);
-  background: url("/assets/img/sp-aboutbg2x.png") center no-repeat;
+  background: url("/devlabo/assets/img/sp-aboutbg2x.png") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include mq(pc) {
-	background: url("/assets/img/pc_avout_bg2x.png") center no-repeat;
+	background: url("/devlabo/assets/img/pc_avout_bg2x.png") center no-repeat;
 	background-size: contain;
 	padding-bottom: vw($pc-width, 80);
   }

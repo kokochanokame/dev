@@ -176,7 +176,7 @@ table {
     .mv {
       padding-top: 10.8333333333vw;
       height: 56.75vw;
-      background-image: url(/assets/img/mv@2x.jpg); } }
+      background-image: url(/devlabo/assets/img/mv@2x.jpg); } }
   .mv__top-image {
     margin-left: -4.6666666667vw; }
     @media screen and (min-width: 768px) {
@@ -239,7 +239,7 @@ table {
       height: 18.6666666667vw; } }
   .banner__top {
     padding: 0.6666666667vw 6.8vw;
-    background: url(/assets/img/cv_top.png) no-repeat center;
+    background: url(/devlabo/assets/img/cv_top.png) no-repeat center;
     background-size: contain;
     font-size: 2.9333333333vw;
     color: white;
@@ -299,14 +299,14 @@ table {
 
 .about {
   padding-bottom: 9.8666666667vw;
-  background: url("/assets/img/sp-aboutbg2x.png") center no-repeat;
+  background: url("/devlabo/assets/img/sp-aboutbg2x.png") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center; }
   @media screen and (min-width: 768px) {
     .about {
-      background: url("/assets/img/pc_avout_bg2x.png") center no-repeat;
+      background: url("/devlabo/assets/img/pc_avout_bg2x.png") center no-repeat;
       background-size: contain;
       padding-bottom: 6.6666666667vw; } }
   .about__sub-title {
@@ -1657,7 +1657,7 @@ table {
       height: 7.3333333333vw;
       left: 2vw;
       top: -7px;
-      background: url("/assets/img/no1@2x.png") no-repeat center center;
+      background: url("/devlabo/assets/img/no1@2x.png") no-repeat center center;
       background-size: contain; }
       @media screen and (min-width: 768px) {
         .plan__course.short::before {
@@ -2548,7 +2548,7 @@ table {
   background-color: #fff; }
   @media screen and (max-width: 767px) {
     .modal-form__container {
-      width: 90%; } }
+      width: 100%; } }
   @media screen and (min-width: 768px) {
     .modal-form__container {
       width: 56.6666666667vw;
@@ -2569,7 +2569,7 @@ table {
   margin: 0 auto; }
   @media screen and (max-width: 767px) {
     .modal-form__inner {
-      width: 98%; } }
+      width: 96%; } }
   @media screen and (min-width: 768px) {
     .modal-form__inner {
       width: 43.5833333333vw; } }

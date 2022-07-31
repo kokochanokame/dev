@@ -27,7 +27,6 @@
 	  margin: 0;
 	  padding: vw($pc-width, 48) vw($pc-width, 20) vw($pc-width, 43);
 	  width: vw($pc-width, 500);
-	  //height: vw($pc-width, 1412);
 	  max-width: 48%;
 	}
   }
@@ -82,7 +81,7 @@
 	  height: vw($sp-width, 55);
 	  left: vw($sp-width, 15);
 	  top: -7px;
-	  background: url("/assets/img/no1@2x.png") no-repeat center center;
+	  background: url("/devlabo/assets/img/no1@2x.png") no-repeat center center;
 	  background-size: contain;
 	  @include mq(pc) {
 		width: vw($pc-width, 87);
@@ -116,7 +115,6 @@
   
   &__ac {
 	font-size: vw($sp-width, 81);
-	//line-height: 0.6;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 60);
 	}
@@ -295,8 +293,6 @@
 	  font-size: vw($pc-width, 18);
 	}
   }
-  
-  
 }
 
 .short {
