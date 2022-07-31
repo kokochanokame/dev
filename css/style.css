@@ -1872,7 +1872,7 @@ table {
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("/assets/img/lstep@2x.png") center center no-repeat;
+      background: url("/devlabo/assets/img/lstep@2x.png") center center no-repeat;
       background-size: contain; }
       @media screen and (min-width: 768px) {
         .step__top::before {
@@ -1886,7 +1886,7 @@ table {
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      background: url("/assets/img/rstep@2x.png") center center no-repeat;
+      background: url("/devlabo/assets/img/rstep@2x.png") center center no-repeat;
       background-size: contain; }
       @media screen and (min-width: 768px) {
         .step__top::after {
@@ -1962,7 +1962,7 @@ table {
         font-size: 1.5vw; } }
 
 .step1::before {
-  background: url("/assets/img/01@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/01@2x.png") center center no-repeat;
   background-size: contain; }
 
 .step1::after {
@@ -1973,7 +1973,7 @@ table {
   right: 50%;
   transform: translateY(-50%);
   bottom: -3.7333333333vw;
-  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background: url(/devlabo/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain; }
   @media screen and (min-width: 768px) {
     .step1::after {
@@ -1985,7 +1985,7 @@ table {
       transform: rotate(-90deg); } }
 
 .step2::before {
-  background: url("/assets/img/02@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/02@2x.png") center center no-repeat;
   background-size: contain; }
 
 .step2::after {
@@ -1996,7 +1996,7 @@ table {
   right: 50%;
   transform: translateY(-50%);
   bottom: -3.7333333333vw;
-  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background: url(/devlabo/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain; }
   @media screen and (min-width: 768px) {
     .step2::after {
@@ -2008,7 +2008,7 @@ table {
       transform: rotate(-90deg); } }
 
 .step3::before {
-  background: url("/assets/img/03@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/03@2x.png") center center no-repeat;
   background-size: contain; }
 
 .faq {

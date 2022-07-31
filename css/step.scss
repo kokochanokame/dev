@@ -32,7 +32,7 @@
 	  left: 0;
 	  top: 50%;
 	  transform: translateY(-50%);
-	  background: url("/assets/img/lstep@2x.png") center center no-repeat;
+	  background: url("/devlabo/assets/img/lstep@2x.png") center center no-repeat;
 	  background-size: contain;
 	  @include mq(pc) {
 		width: vw($sp-width, 31);
@@ -48,7 +48,7 @@
 	  right: 0;
 	  top: 50%;
 	  transform: translateY(-50%);
-	  background: url("/assets/img/rstep@2x.png") center center no-repeat;
+	  background: url("/devlabo/assets/img/rstep@2x.png") center center no-repeat;
 	  background-size: contain;
 	  @include mq(pc) {
 		width: vw($sp-width, 31);
@@ -142,7 +142,7 @@
 }
 
 .step1::before {
-  background: url("/assets/img/01@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/01@2x.png") center center no-repeat;
   background-size: contain;
 }
 
@@ -154,7 +154,7 @@
   right: 50%;
   transform: translateY(-50%);
   bottom: vw($sp-width, -28);
-  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background: url(/devlabo/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain;
   @include mq(pc) {
 	right: vw($pc-width, -27);
@@ -167,7 +167,7 @@
 }
 
 .step2::before {
-  background: url("/assets/img/02@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/02@2x.png") center center no-repeat;
   background-size: contain;
 }
 
@@ -179,7 +179,7 @@
   right: 50%;
   transform: translateY(-50%);
   bottom: vw($sp-width, -28);
-  background: url(/assets/img/step_arrow.png) center center no-repeat;
+  background: url(/devlabo/assets/img/step_arrow.png) center center no-repeat;
   background-size: contain;
   @include mq(pc) {
 	right: vw($pc-width, -27);
@@ -192,6 +192,6 @@
 }
 
 .step3::before {
-  background: url("/assets/img/03@2x.png") center center no-repeat;
+  background: url("/devlabo/assets/img/03@2x.png") center center no-repeat;
   background-size: contain;
 }

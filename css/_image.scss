@@ -33,7 +33,7 @@
 	  background-color: rgb(255, 113, 101);
 	  border-radius: 30px;
 	  @include mq(pc) {
-		margin-right: 9vw/*($pc-width, 38)*/;
+		margin-right: 9vw;
 		margin-bottom: 1vw;
 		padding: vw($pc-width, 3) vw($pc-width, 22);
 		font-size: vw($pc-width, 22);
@@ -114,7 +114,7 @@
 	  border-radius: 30px;
 	  border: solid 1px rgb(124, 111, 123);
 	  @include mq(pc) {
-		margin-right: 17vw/*($pc-width, 38)*/;
+		margin-right: 17vw;
 		margin-bottom: 1vw;
 		padding: vw($pc-width, 3) vw($pc-width, 22);
 		font-size: vw($pc-width, 22);
