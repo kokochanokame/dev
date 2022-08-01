@@ -108,6 +108,7 @@
 	font-weight: bold;
 	line-height: 1.429;
 	text-align: center;
+	letter-spacing: -1px;
 	@include mq(pc) {
 	  font-size: vw($pc-width, 28);
 	}
